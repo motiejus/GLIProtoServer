@@ -1,0 +1,36 @@
+
+message init {
+    repeated string userid_list = 1;
+}
+
+message handle_user_join {
+    required string userid = 1;
+    required bytes state = 2;
+}
+
+message handle_user_leave {
+    required string userid = 1;
+    required bytes state = 2;
+}
+
+message handle_action {
+    required string userid = 1;
+    required string command_name = 2;
+    repeated bytes command_args = 3;
+    required bytes state = 4;
+}
+
+message handle_timer {
+    required bytes identifier = 1;
+    required uint32 delta = 2;
+    required bytes state = 3;
+}
+
+message command {
+    optional init init = 1;
+    optional handle_user_join handle_user_join = 2;
+    optional handle_user_leave handle_user_leave = 3;
+    optional handle_action handle_action = 4;
+    optional handle_timer handle_timer = 5;
+}
+
