@@ -3,9 +3,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.List;
-
-import com.google.protobuf.ByteString;
 
 /**
  * Waits for incoming GLSResponseProto obects. When one arrives, recreates it from 
@@ -26,7 +23,7 @@ public class GLSProtoServer {
 
 		while (true) {
 
-			System.out.println ("Waiting for connections");
+			System.out.println ("Waiting for connections on port " + PORT);
 
 			//This waits for an incomming message
 			Socket sock = ss.accept();
