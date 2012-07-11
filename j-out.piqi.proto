@@ -12,6 +12,7 @@ message gl_command {
     optional bool cont = 1;
     optional bool stop = 2;
     optional userid_list kick_player = 3;
+    optional bytes stop_timer = 4;
 }
 
 message gl_message {
@@ -21,7 +22,7 @@ message gl_message {
 }
 
 message gl_timer {
-    required bytes identifier = 1;
+    required bytes timer_identifier = 1;
     required uint32 duration_in_ms = 2;
     required uint32 tick_duration_in_ms = 3;
 }
