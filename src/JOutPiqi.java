@@ -891,6 +891,10 @@ public final class JOutPiqi {
     boolean hasKickPlayer();
     JOutPiqi.userid_list getKickPlayer();
     JOutPiqi.userid_listOrBuilder getKickPlayerOrBuilder();
+    
+    // optional bytes stop_timer = 4;
+    boolean hasStopTimer();
+    com.google.protobuf.ByteString getStopTimer();
   }
   public static final class gl_command extends
       com.google.protobuf.GeneratedMessage
@@ -954,10 +958,21 @@ public final class JOutPiqi {
       return kickPlayer_;
     }
     
+    // optional bytes stop_timer = 4;
+    public static final int STOP_TIMER_FIELD_NUMBER = 4;
+    private com.google.protobuf.ByteString stopTimer_;
+    public boolean hasStopTimer() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public com.google.protobuf.ByteString getStopTimer() {
+      return stopTimer_;
+    }
+    
     private void initFields() {
       cont_ = false;
       stop_ = false;
       kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
+      stopTimer_ = com.google.protobuf.ByteString.EMPTY;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -980,6 +995,9 @@ public final class JOutPiqi {
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         output.writeMessage(3, kickPlayer_);
       }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeBytes(4, stopTimer_);
+      }
       getUnknownFields().writeTo(output);
     }
     
@@ -1000,6 +1018,10 @@ public final class JOutPiqi {
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, kickPlayer_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(4, stopTimer_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1136,6 +1158,8 @@ public final class JOutPiqi {
           kickPlayerBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000004);
+        stopTimer_ = com.google.protobuf.ByteString.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
       
@@ -1190,6 +1214,10 @@ public final class JOutPiqi {
         } else {
           result.kickPlayer_ = kickPlayerBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.stopTimer_ = stopTimer_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -1214,6 +1242,9 @@ public final class JOutPiqi {
         }
         if (other.hasKickPlayer()) {
           mergeKickPlayer(other.getKickPlayer());
+        }
+        if (other.hasStopTimer()) {
+          setStopTimer(other.getStopTimer());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -1263,6 +1294,11 @@ public final class JOutPiqi {
               }
               input.readMessage(subBuilder, extensionRegistry);
               setKickPlayer(subBuilder.buildPartial());
+              break;
+            }
+            case 34: {
+              bitField0_ |= 0x00000008;
+              stopTimer_ = input.readBytes();
               break;
             }
           }
@@ -1401,6 +1437,30 @@ public final class JOutPiqi {
           kickPlayer_ = null;
         }
         return kickPlayerBuilder_;
+      }
+      
+      // optional bytes stop_timer = 4;
+      private com.google.protobuf.ByteString stopTimer_ = com.google.protobuf.ByteString.EMPTY;
+      public boolean hasStopTimer() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public com.google.protobuf.ByteString getStopTimer() {
+        return stopTimer_;
+      }
+      public Builder setStopTimer(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000008;
+        stopTimer_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearStopTimer() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        stopTimer_ = getDefaultInstance().getStopTimer();
+        onChanged();
+        return this;
       }
       
       // @@protoc_insertion_point(builder_scope:gl_command)
@@ -2056,9 +2116,9 @@ public final class JOutPiqi {
   public interface gl_timerOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required bytes identifier = 1;
-    boolean hasIdentifier();
-    com.google.protobuf.ByteString getIdentifier();
+    // required bytes timer_identifier = 1;
+    boolean hasTimerIdentifier();
+    com.google.protobuf.ByteString getTimerIdentifier();
     
     // required uint32 duration_in_ms = 2;
     boolean hasDurationInMs();
@@ -2097,14 +2157,14 @@ public final class JOutPiqi {
     }
     
     private int bitField0_;
-    // required bytes identifier = 1;
-    public static final int IDENTIFIER_FIELD_NUMBER = 1;
-    private com.google.protobuf.ByteString identifier_;
-    public boolean hasIdentifier() {
+    // required bytes timer_identifier = 1;
+    public static final int TIMER_IDENTIFIER_FIELD_NUMBER = 1;
+    private com.google.protobuf.ByteString timerIdentifier_;
+    public boolean hasTimerIdentifier() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public com.google.protobuf.ByteString getIdentifier() {
-      return identifier_;
+    public com.google.protobuf.ByteString getTimerIdentifier() {
+      return timerIdentifier_;
     }
     
     // required uint32 duration_in_ms = 2;
@@ -2128,7 +2188,7 @@ public final class JOutPiqi {
     }
     
     private void initFields() {
-      identifier_ = com.google.protobuf.ByteString.EMPTY;
+      timerIdentifier_ = com.google.protobuf.ByteString.EMPTY;
       durationInMs_ = 0;
       tickDurationInMs_ = 0;
     }
@@ -2137,7 +2197,7 @@ public final class JOutPiqi {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasIdentifier()) {
+      if (!hasTimerIdentifier()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -2157,7 +2217,7 @@ public final class JOutPiqi {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, identifier_);
+        output.writeBytes(1, timerIdentifier_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeUInt32(2, durationInMs_);
@@ -2176,7 +2236,7 @@ public final class JOutPiqi {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, identifier_);
+          .computeBytesSize(1, timerIdentifier_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2310,7 +2370,7 @@ public final class JOutPiqi {
       
       public Builder clear() {
         super.clear();
-        identifier_ = com.google.protobuf.ByteString.EMPTY;
+        timerIdentifier_ = com.google.protobuf.ByteString.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000001);
         durationInMs_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -2357,7 +2417,7 @@ public final class JOutPiqi {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.identifier_ = identifier_;
+        result.timerIdentifier_ = timerIdentifier_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -2382,8 +2442,8 @@ public final class JOutPiqi {
       
       public Builder mergeFrom(JOutPiqi.gl_timer other) {
         if (other == JOutPiqi.gl_timer.getDefaultInstance()) return this;
-        if (other.hasIdentifier()) {
-          setIdentifier(other.getIdentifier());
+        if (other.hasTimerIdentifier()) {
+          setTimerIdentifier(other.getTimerIdentifier());
         }
         if (other.hasDurationInMs()) {
           setDurationInMs(other.getDurationInMs());
@@ -2396,7 +2456,7 @@ public final class JOutPiqi {
       }
       
       public final boolean isInitialized() {
-        if (!hasIdentifier()) {
+        if (!hasTimerIdentifier()) {
           
           return false;
         }
@@ -2436,7 +2496,7 @@ public final class JOutPiqi {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              identifier_ = input.readBytes();
+              timerIdentifier_ = input.readBytes();
               break;
             }
             case 16: {
@@ -2455,26 +2515,26 @@ public final class JOutPiqi {
       
       private int bitField0_;
       
-      // required bytes identifier = 1;
-      private com.google.protobuf.ByteString identifier_ = com.google.protobuf.ByteString.EMPTY;
-      public boolean hasIdentifier() {
+      // required bytes timer_identifier = 1;
+      private com.google.protobuf.ByteString timerIdentifier_ = com.google.protobuf.ByteString.EMPTY;
+      public boolean hasTimerIdentifier() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public com.google.protobuf.ByteString getIdentifier() {
-        return identifier_;
+      public com.google.protobuf.ByteString getTimerIdentifier() {
+        return timerIdentifier_;
       }
-      public Builder setIdentifier(com.google.protobuf.ByteString value) {
+      public Builder setTimerIdentifier(com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        identifier_ = value;
+        timerIdentifier_ = value;
         onChanged();
         return this;
       }
-      public Builder clearIdentifier() {
+      public Builder clearTimerIdentifier() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        identifier_ = getDefaultInstance().getIdentifier();
+        timerIdentifier_ = getDefaultInstance().getTimerIdentifier();
         onChanged();
         return this;
       }
@@ -3765,17 +3825,17 @@ public final class JOutPiqi {
     java.lang.String[] descriptorData = {
       "\n\020j-out.piqi.proto\"\033\n\013userid_list\022\014\n\004ele" +
       "m\030\001 \003(\t\"8\n\014gl_recipient\022\013\n\003all\030\001 \001(\010\022\033\n\005" +
-      "users\030\002 \001(\0132\014.userid_list\"K\n\ngl_command\022" +
+      "users\030\002 \001(\0132\014.userid_list\"_\n\ngl_command\022" +
       "\014\n\004cont\030\001 \001(\010\022\014\n\004stop\030\002 \001(\010\022!\n\013kick_play" +
-      "er\030\003 \001(\0132\014.userid_list\"Z\n\ngl_message\022 \n\t" +
-      "recipient\030\001 \002(\0132\r.gl_recipient\022\024\n\014comman" +
-      "d_name\030\002 \002(\t\022\024\n\014command_args\030\003 \003(\014\"S\n\010gl" +
-      "_timer\022\022\n\nidentifier\030\001 \002(\014\022\026\n\016duration_i" +
-      "n_ms\030\002 \002(\r\022\033\n\023tick_duration_in_ms\030\003 \002(\r\"" +
-      "}\n\017callback_return\022\021\n\tnew_state\030\001 \002(\014\022\035\n",
-      "\010commands\030\002 \003(\0132\013.gl_command\022\035\n\010messages" +
-      "\030\003 \003(\0132\013.gl_message\022\031\n\006timers\030\004 \003(\0132\t.gl" +
-      "_timer"
+      "er\030\003 \001(\0132\014.userid_list\022\022\n\nstop_timer\030\004 \001" +
+      "(\014\"Z\n\ngl_message\022 \n\trecipient\030\001 \002(\0132\r.gl" +
+      "_recipient\022\024\n\014command_name\030\002 \002(\t\022\024\n\014comm" +
+      "and_args\030\003 \003(\014\"Y\n\010gl_timer\022\030\n\020timer_iden" +
+      "tifier\030\001 \002(\014\022\026\n\016duration_in_ms\030\002 \002(\r\022\033\n\023" +
+      "tick_duration_in_ms\030\003 \002(\r\"}\n\017callback_re",
+      "turn\022\021\n\tnew_state\030\001 \002(\014\022\035\n\010commands\030\002 \003(" +
+      "\0132\013.gl_command\022\035\n\010messages\030\003 \003(\0132\013.gl_me" +
+      "ssage\022\031\n\006timers\030\004 \003(\0132\t.gl_timer"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -3803,7 +3863,7 @@ public final class JOutPiqi {
           internal_static_gl_command_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_gl_command_descriptor,
-              new java.lang.String[] { "Cont", "Stop", "KickPlayer", },
+              new java.lang.String[] { "Cont", "Stop", "KickPlayer", "StopTimer", },
               JOutPiqi.gl_command.class,
               JOutPiqi.gl_command.Builder.class);
           internal_static_gl_message_descriptor =
@@ -3819,7 +3879,7 @@ public final class JOutPiqi {
           internal_static_gl_timer_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_gl_timer_descriptor,
-              new java.lang.String[] { "Identifier", "DurationInMs", "TickDurationInMs", },
+              new java.lang.String[] { "TimerIdentifier", "DurationInMs", "TickDurationInMs", },
               JOutPiqi.gl_timer.class,
               JOutPiqi.gl_timer.Builder.class);
           internal_static_callback_return_descriptor =
