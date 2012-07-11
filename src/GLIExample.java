@@ -37,7 +37,7 @@ public class GLIExample implements GLI {
 		return demo().addTimers(JOutPiqi.gl_timer.newBuilder()
 				.setDurationInMs(60*1000)
 				.setTickDurationInMs(5*1000)
-				.setIdentifier(ByteString.copyFromUtf8("ticker"))).build();
+				.setTimerIdentifier(ByteString.copyFromUtf8("ticker"))).build();
 	}
 
 	private JOutPiqi.callback_return.Builder demo() {
