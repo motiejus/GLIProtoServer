@@ -1,36 +1,46 @@
+import "j-system.piqi.proto" ;
 
 message userid_list {
     repeated string elem = 1;
 }
 
-message gl_recipient {
+message recipient {
     optional bool all = 1;
     optional userid_list users = 2;
 }
 
-message gl_command {
-    optional bool cont = 1;
+message result {
+    optional bool ok = 1;
     optional bool stop = 2;
-    optional userid_list kick_player = 3;
-    optional bytes stop_timer = 4;
 }
 
-message gl_message {
-    required gl_recipient recipient = 1;
+message message {
+    required recipient recipient = 1;
     required string command_name = 2;
     repeated bytes command_args = 3;
 }
 
-message gl_timer {
-    required bytes timer_identifier = 1;
+message timer {
+    required string id = 1;
     required uint32 duration_in_ms = 2;
     required uint32 tick_duration_in_ms = 3;
 }
 
-message callback_return {
-    required bytes new_state = 1;
-    repeated gl_command commands = 2;
-    repeated gl_message messages = 3;
-    repeated gl_timer timers = 4;
+message action {
+    optional string stop_timer = 1;
+    optional timer start_timer = 2;
+    optional userid_list kick_player = 3;
+    optional message message = 4;
+}
+
+message callback_response {
+    required result result = 1;
+    required bytes state = 2;
+    repeated action actions = 3;
+}
+
+message response {
+    optional callback_response response = 1;
+    optional system_request system = 2;
 }
 

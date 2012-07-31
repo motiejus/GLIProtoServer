@@ -1,0 +1,27 @@
+
+message grant_coins_request {
+    required string userid = 1;
+    required uint32 coins = 2;
+}
+
+message buy_item_request {
+    required string userid = 1;
+    required uint32 shop_item_id = 2;
+    required uint32 amount = 3;
+}
+
+message system_request {
+    optional buy_item_request buy_item = 1;
+    optional grant_coins_request grant_coins = 2;
+}
+
+message system_error {
+    required uint32 code = 1;
+    required string description = 2;
+}
+
+message system_response {
+    optional bool ok = 1;
+    optional system_error error = 2;
+}
+

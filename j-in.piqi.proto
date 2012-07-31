@@ -1,3 +1,4 @@
+import "j-system.piqi.proto" ;
 
 message init {
     repeated string userid_list = 1;
@@ -21,16 +22,24 @@ message handle_action {
 }
 
 message handle_timer {
-    required bytes identifier = 1;
+    required string id = 1;
     required uint32 delta = 2;
     required bytes state = 3;
 }
 
-message command {
+message handle_timer_complete {
+    required string id = 1;
+    required uint32 delta = 2;
+    required bytes state = 3;
+}
+
+message request {
     optional init init = 1;
     optional handle_user_join handle_user_join = 2;
     optional handle_user_leave handle_user_leave = 3;
     optional handle_action handle_action = 4;
     optional handle_timer handle_timer = 5;
+    optional handle_timer_complete handle_timer_complete = 6;
+    optional system_response system = 7;
 }
 
