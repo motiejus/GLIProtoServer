@@ -395,7 +395,7 @@ public final class JOutPiqi {
     // @@protoc_insertion_point(class_scope:userid_list)
   }
   
-  public interface gl_recipientOrBuilder
+  public interface recipientOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
     // optional bool all = 1;
@@ -407,32 +407,32 @@ public final class JOutPiqi {
     JOutPiqi.userid_list getUsers();
     JOutPiqi.userid_listOrBuilder getUsersOrBuilder();
   }
-  public static final class gl_recipient extends
+  public static final class recipient extends
       com.google.protobuf.GeneratedMessage
-      implements gl_recipientOrBuilder {
-    // Use gl_recipient.newBuilder() to construct.
-    private gl_recipient(Builder builder) {
+      implements recipientOrBuilder {
+    // Use recipient.newBuilder() to construct.
+    private recipient(Builder builder) {
       super(builder);
     }
-    private gl_recipient(boolean noInit) {}
+    private recipient(boolean noInit) {}
     
-    private static final gl_recipient defaultInstance;
-    public static gl_recipient getDefaultInstance() {
+    private static final recipient defaultInstance;
+    public static recipient getDefaultInstance() {
       return defaultInstance;
     }
     
-    public gl_recipient getDefaultInstanceForType() {
+    public recipient getDefaultInstanceForType() {
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return JOutPiqi.internal_static_gl_recipient_descriptor;
+      return JOutPiqi.internal_static_recipient_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return JOutPiqi.internal_static_gl_recipient_fieldAccessorTable;
+      return JOutPiqi.internal_static_recipient_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -510,41 +510,41 @@ public final class JOutPiqi {
       return super.writeReplace();
     }
     
-    public static JOutPiqi.gl_recipient parseFrom(
+    public static JOutPiqi.recipient parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.gl_recipient parseFrom(
+    public static JOutPiqi.recipient parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_recipient parseFrom(byte[] data)
+    public static JOutPiqi.recipient parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.gl_recipient parseFrom(
+    public static JOutPiqi.recipient parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_recipient parseFrom(java.io.InputStream input)
+    public static JOutPiqi.recipient parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.gl_recipient parseFrom(
+    public static JOutPiqi.recipient parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_recipient parseDelimitedFrom(java.io.InputStream input)
+    public static JOutPiqi.recipient parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -553,7 +553,7 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.gl_recipient parseDelimitedFrom(
+    public static JOutPiqi.recipient parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -564,12 +564,12 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.gl_recipient parseFrom(
+    public static JOutPiqi.recipient parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.gl_recipient parseFrom(
+    public static JOutPiqi.recipient parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -579,7 +579,7 @@ public final class JOutPiqi {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(JOutPiqi.gl_recipient prototype) {
+    public static Builder newBuilder(JOutPiqi.recipient prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -592,18 +592,18 @@ public final class JOutPiqi {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements JOutPiqi.gl_recipientOrBuilder {
+       implements JOutPiqi.recipientOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return JOutPiqi.internal_static_gl_recipient_descriptor;
+        return JOutPiqi.internal_static_recipient_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return JOutPiqi.internal_static_gl_recipient_fieldAccessorTable;
+        return JOutPiqi.internal_static_recipient_fieldAccessorTable;
       }
       
-      // Construct using JOutPiqi.gl_recipient.newBuilder()
+      // Construct using JOutPiqi.recipient.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -640,24 +640,24 @@ public final class JOutPiqi {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return JOutPiqi.gl_recipient.getDescriptor();
+        return JOutPiqi.recipient.getDescriptor();
       }
       
-      public JOutPiqi.gl_recipient getDefaultInstanceForType() {
-        return JOutPiqi.gl_recipient.getDefaultInstance();
+      public JOutPiqi.recipient getDefaultInstanceForType() {
+        return JOutPiqi.recipient.getDefaultInstance();
       }
       
-      public JOutPiqi.gl_recipient build() {
-        JOutPiqi.gl_recipient result = buildPartial();
+      public JOutPiqi.recipient build() {
+        JOutPiqi.recipient result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private JOutPiqi.gl_recipient buildParsed()
+      private JOutPiqi.recipient buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        JOutPiqi.gl_recipient result = buildPartial();
+        JOutPiqi.recipient result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -665,8 +665,8 @@ public final class JOutPiqi {
         return result;
       }
       
-      public JOutPiqi.gl_recipient buildPartial() {
-        JOutPiqi.gl_recipient result = new JOutPiqi.gl_recipient(this);
+      public JOutPiqi.recipient buildPartial() {
+        JOutPiqi.recipient result = new JOutPiqi.recipient(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -687,16 +687,16 @@ public final class JOutPiqi {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof JOutPiqi.gl_recipient) {
-          return mergeFrom((JOutPiqi.gl_recipient)other);
+        if (other instanceof JOutPiqi.recipient) {
+          return mergeFrom((JOutPiqi.recipient)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(JOutPiqi.gl_recipient other) {
-        if (other == JOutPiqi.gl_recipient.getDefaultInstance()) return this;
+      public Builder mergeFrom(JOutPiqi.recipient other) {
+        if (other == JOutPiqi.recipient.getDefaultInstance()) return this;
         if (other.hasAll()) {
           setAll(other.getAll());
         }
@@ -865,74 +865,65 @@ public final class JOutPiqi {
         return usersBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:gl_recipient)
+      // @@protoc_insertion_point(builder_scope:recipient)
     }
     
     static {
-      defaultInstance = new gl_recipient(true);
+      defaultInstance = new recipient(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:gl_recipient)
+    // @@protoc_insertion_point(class_scope:recipient)
   }
   
-  public interface gl_commandOrBuilder
+  public interface resultOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // optional bool cont = 1;
-    boolean hasCont();
-    boolean getCont();
+    // optional bool ok = 1;
+    boolean hasOk();
+    boolean getOk();
     
     // optional bool stop = 2;
     boolean hasStop();
     boolean getStop();
-    
-    // optional .userid_list kick_player = 3;
-    boolean hasKickPlayer();
-    JOutPiqi.userid_list getKickPlayer();
-    JOutPiqi.userid_listOrBuilder getKickPlayerOrBuilder();
-    
-    // optional bytes stop_timer = 4;
-    boolean hasStopTimer();
-    com.google.protobuf.ByteString getStopTimer();
   }
-  public static final class gl_command extends
+  public static final class result extends
       com.google.protobuf.GeneratedMessage
-      implements gl_commandOrBuilder {
-    // Use gl_command.newBuilder() to construct.
-    private gl_command(Builder builder) {
+      implements resultOrBuilder {
+    // Use result.newBuilder() to construct.
+    private result(Builder builder) {
       super(builder);
     }
-    private gl_command(boolean noInit) {}
+    private result(boolean noInit) {}
     
-    private static final gl_command defaultInstance;
-    public static gl_command getDefaultInstance() {
+    private static final result defaultInstance;
+    public static result getDefaultInstance() {
       return defaultInstance;
     }
     
-    public gl_command getDefaultInstanceForType() {
+    public result getDefaultInstanceForType() {
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return JOutPiqi.internal_static_gl_command_descriptor;
+      return JOutPiqi.internal_static_result_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return JOutPiqi.internal_static_gl_command_fieldAccessorTable;
+      return JOutPiqi.internal_static_result_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // optional bool cont = 1;
-    public static final int CONT_FIELD_NUMBER = 1;
-    private boolean cont_;
-    public boolean hasCont() {
+    // optional bool ok = 1;
+    public static final int OK_FIELD_NUMBER = 1;
+    private boolean ok_;
+    public boolean hasOk() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public boolean getCont() {
-      return cont_;
+    public boolean getOk() {
+      return ok_;
     }
     
     // optional bool stop = 2;
@@ -945,34 +936,9 @@ public final class JOutPiqi {
       return stop_;
     }
     
-    // optional .userid_list kick_player = 3;
-    public static final int KICK_PLAYER_FIELD_NUMBER = 3;
-    private JOutPiqi.userid_list kickPlayer_;
-    public boolean hasKickPlayer() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
-    }
-    public JOutPiqi.userid_list getKickPlayer() {
-      return kickPlayer_;
-    }
-    public JOutPiqi.userid_listOrBuilder getKickPlayerOrBuilder() {
-      return kickPlayer_;
-    }
-    
-    // optional bytes stop_timer = 4;
-    public static final int STOP_TIMER_FIELD_NUMBER = 4;
-    private com.google.protobuf.ByteString stopTimer_;
-    public boolean hasStopTimer() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
-    }
-    public com.google.protobuf.ByteString getStopTimer() {
-      return stopTimer_;
-    }
-    
     private void initFields() {
-      cont_ = false;
+      ok_ = false;
       stop_ = false;
-      kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
-      stopTimer_ = com.google.protobuf.ByteString.EMPTY;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -987,16 +953,10 @@ public final class JOutPiqi {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBool(1, cont_);
+        output.writeBool(1, ok_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeBool(2, stop_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeMessage(3, kickPlayer_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(4, stopTimer_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -1009,19 +969,11 @@ public final class JOutPiqi {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, cont_);
+          .computeBoolSize(1, ok_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, stop_);
-      }
-      if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, kickPlayer_);
-      }
-      if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, stopTimer_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -1035,41 +987,41 @@ public final class JOutPiqi {
       return super.writeReplace();
     }
     
-    public static JOutPiqi.gl_command parseFrom(
+    public static JOutPiqi.result parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.gl_command parseFrom(
+    public static JOutPiqi.result parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_command parseFrom(byte[] data)
+    public static JOutPiqi.result parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.gl_command parseFrom(
+    public static JOutPiqi.result parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_command parseFrom(java.io.InputStream input)
+    public static JOutPiqi.result parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.gl_command parseFrom(
+    public static JOutPiqi.result parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_command parseDelimitedFrom(java.io.InputStream input)
+    public static JOutPiqi.result parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -1078,7 +1030,7 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.gl_command parseDelimitedFrom(
+    public static JOutPiqi.result parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1089,12 +1041,12 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.gl_command parseFrom(
+    public static JOutPiqi.result parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.gl_command parseFrom(
+    public static JOutPiqi.result parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1104,7 +1056,7 @@ public final class JOutPiqi {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(JOutPiqi.gl_command prototype) {
+    public static Builder newBuilder(JOutPiqi.result prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -1117,18 +1069,18 @@ public final class JOutPiqi {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements JOutPiqi.gl_commandOrBuilder {
+       implements JOutPiqi.resultOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return JOutPiqi.internal_static_gl_command_descriptor;
+        return JOutPiqi.internal_static_result_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return JOutPiqi.internal_static_gl_command_fieldAccessorTable;
+        return JOutPiqi.internal_static_result_fieldAccessorTable;
       }
       
-      // Construct using JOutPiqi.gl_command.newBuilder()
+      // Construct using JOutPiqi.result.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1139,7 +1091,6 @@ public final class JOutPiqi {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getKickPlayerFieldBuilder();
         }
       }
       private static Builder create() {
@@ -1148,18 +1099,10 @@ public final class JOutPiqi {
       
       public Builder clear() {
         super.clear();
-        cont_ = false;
+        ok_ = false;
         bitField0_ = (bitField0_ & ~0x00000001);
         stop_ = false;
         bitField0_ = (bitField0_ & ~0x00000002);
-        if (kickPlayerBuilder_ == null) {
-          kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
-        } else {
-          kickPlayerBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000004);
-        stopTimer_ = com.google.protobuf.ByteString.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
       
@@ -1169,24 +1112,24 @@ public final class JOutPiqi {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return JOutPiqi.gl_command.getDescriptor();
+        return JOutPiqi.result.getDescriptor();
       }
       
-      public JOutPiqi.gl_command getDefaultInstanceForType() {
-        return JOutPiqi.gl_command.getDefaultInstance();
+      public JOutPiqi.result getDefaultInstanceForType() {
+        return JOutPiqi.result.getDefaultInstance();
       }
       
-      public JOutPiqi.gl_command build() {
-        JOutPiqi.gl_command result = buildPartial();
+      public JOutPiqi.result build() {
+        JOutPiqi.result result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private JOutPiqi.gl_command buildParsed()
+      private JOutPiqi.result buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        JOutPiqi.gl_command result = buildPartial();
+        JOutPiqi.result result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -1194,57 +1137,39 @@ public final class JOutPiqi {
         return result;
       }
       
-      public JOutPiqi.gl_command buildPartial() {
-        JOutPiqi.gl_command result = new JOutPiqi.gl_command(this);
+      public JOutPiqi.result buildPartial() {
+        JOutPiqi.result result = new JOutPiqi.result(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.cont_ = cont_;
+        result.ok_ = ok_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
         result.stop_ = stop_;
-        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
-          to_bitField0_ |= 0x00000004;
-        }
-        if (kickPlayerBuilder_ == null) {
-          result.kickPlayer_ = kickPlayer_;
-        } else {
-          result.kickPlayer_ = kickPlayerBuilder_.build();
-        }
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
-          to_bitField0_ |= 0x00000008;
-        }
-        result.stopTimer_ = stopTimer_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof JOutPiqi.gl_command) {
-          return mergeFrom((JOutPiqi.gl_command)other);
+        if (other instanceof JOutPiqi.result) {
+          return mergeFrom((JOutPiqi.result)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(JOutPiqi.gl_command other) {
-        if (other == JOutPiqi.gl_command.getDefaultInstance()) return this;
-        if (other.hasCont()) {
-          setCont(other.getCont());
+      public Builder mergeFrom(JOutPiqi.result other) {
+        if (other == JOutPiqi.result.getDefaultInstance()) return this;
+        if (other.hasOk()) {
+          setOk(other.getOk());
         }
         if (other.hasStop()) {
           setStop(other.getStop());
-        }
-        if (other.hasKickPlayer()) {
-          mergeKickPlayer(other.getKickPlayer());
-        }
-        if (other.hasStopTimer()) {
-          setStopTimer(other.getStopTimer());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -1279,26 +1204,12 @@ public final class JOutPiqi {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              cont_ = input.readBool();
+              ok_ = input.readBool();
               break;
             }
             case 16: {
               bitField0_ |= 0x00000002;
               stop_ = input.readBool();
-              break;
-            }
-            case 26: {
-              JOutPiqi.userid_list.Builder subBuilder = JOutPiqi.userid_list.newBuilder();
-              if (hasKickPlayer()) {
-                subBuilder.mergeFrom(getKickPlayer());
-              }
-              input.readMessage(subBuilder, extensionRegistry);
-              setKickPlayer(subBuilder.buildPartial());
-              break;
-            }
-            case 34: {
-              bitField0_ |= 0x00000008;
-              stopTimer_ = input.readBytes();
               break;
             }
           }
@@ -1307,23 +1218,23 @@ public final class JOutPiqi {
       
       private int bitField0_;
       
-      // optional bool cont = 1;
-      private boolean cont_ ;
-      public boolean hasCont() {
+      // optional bool ok = 1;
+      private boolean ok_ ;
+      public boolean hasOk() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public boolean getCont() {
-        return cont_;
+      public boolean getOk() {
+        return ok_;
       }
-      public Builder setCont(boolean value) {
+      public Builder setOk(boolean value) {
         bitField0_ |= 0x00000001;
-        cont_ = value;
+        ok_ = value;
         onChanged();
         return this;
       }
-      public Builder clearCont() {
+      public Builder clearOk() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        cont_ = false;
+        ok_ = false;
         onChanged();
         return this;
       }
@@ -1349,138 +1260,24 @@ public final class JOutPiqi {
         return this;
       }
       
-      // optional .userid_list kick_player = 3;
-      private JOutPiqi.userid_list kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
-      private com.google.protobuf.SingleFieldBuilder<
-          JOutPiqi.userid_list, JOutPiqi.userid_list.Builder, JOutPiqi.userid_listOrBuilder> kickPlayerBuilder_;
-      public boolean hasKickPlayer() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
-      }
-      public JOutPiqi.userid_list getKickPlayer() {
-        if (kickPlayerBuilder_ == null) {
-          return kickPlayer_;
-        } else {
-          return kickPlayerBuilder_.getMessage();
-        }
-      }
-      public Builder setKickPlayer(JOutPiqi.userid_list value) {
-        if (kickPlayerBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          kickPlayer_ = value;
-          onChanged();
-        } else {
-          kickPlayerBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      public Builder setKickPlayer(
-          JOutPiqi.userid_list.Builder builderForValue) {
-        if (kickPlayerBuilder_ == null) {
-          kickPlayer_ = builderForValue.build();
-          onChanged();
-        } else {
-          kickPlayerBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      public Builder mergeKickPlayer(JOutPiqi.userid_list value) {
-        if (kickPlayerBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) == 0x00000004) &&
-              kickPlayer_ != JOutPiqi.userid_list.getDefaultInstance()) {
-            kickPlayer_ =
-              JOutPiqi.userid_list.newBuilder(kickPlayer_).mergeFrom(value).buildPartial();
-          } else {
-            kickPlayer_ = value;
-          }
-          onChanged();
-        } else {
-          kickPlayerBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000004;
-        return this;
-      }
-      public Builder clearKickPlayer() {
-        if (kickPlayerBuilder_ == null) {
-          kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
-          onChanged();
-        } else {
-          kickPlayerBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000004);
-        return this;
-      }
-      public JOutPiqi.userid_list.Builder getKickPlayerBuilder() {
-        bitField0_ |= 0x00000004;
-        onChanged();
-        return getKickPlayerFieldBuilder().getBuilder();
-      }
-      public JOutPiqi.userid_listOrBuilder getKickPlayerOrBuilder() {
-        if (kickPlayerBuilder_ != null) {
-          return kickPlayerBuilder_.getMessageOrBuilder();
-        } else {
-          return kickPlayer_;
-        }
-      }
-      private com.google.protobuf.SingleFieldBuilder<
-          JOutPiqi.userid_list, JOutPiqi.userid_list.Builder, JOutPiqi.userid_listOrBuilder> 
-          getKickPlayerFieldBuilder() {
-        if (kickPlayerBuilder_ == null) {
-          kickPlayerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              JOutPiqi.userid_list, JOutPiqi.userid_list.Builder, JOutPiqi.userid_listOrBuilder>(
-                  kickPlayer_,
-                  getParentForChildren(),
-                  isClean());
-          kickPlayer_ = null;
-        }
-        return kickPlayerBuilder_;
-      }
-      
-      // optional bytes stop_timer = 4;
-      private com.google.protobuf.ByteString stopTimer_ = com.google.protobuf.ByteString.EMPTY;
-      public boolean hasStopTimer() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
-      }
-      public com.google.protobuf.ByteString getStopTimer() {
-        return stopTimer_;
-      }
-      public Builder setStopTimer(com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  bitField0_ |= 0x00000008;
-        stopTimer_ = value;
-        onChanged();
-        return this;
-      }
-      public Builder clearStopTimer() {
-        bitField0_ = (bitField0_ & ~0x00000008);
-        stopTimer_ = getDefaultInstance().getStopTimer();
-        onChanged();
-        return this;
-      }
-      
-      // @@protoc_insertion_point(builder_scope:gl_command)
+      // @@protoc_insertion_point(builder_scope:result)
     }
     
     static {
-      defaultInstance = new gl_command(true);
+      defaultInstance = new result(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:gl_command)
+    // @@protoc_insertion_point(class_scope:result)
   }
   
-  public interface gl_messageOrBuilder
+  public interface messageOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required .gl_recipient recipient = 1;
+    // required .recipient recipient = 1;
     boolean hasRecipient();
-    JOutPiqi.gl_recipient getRecipient();
-    JOutPiqi.gl_recipientOrBuilder getRecipientOrBuilder();
+    JOutPiqi.recipient getRecipient();
+    JOutPiqi.recipientOrBuilder getRecipientOrBuilder();
     
     // required string command_name = 2;
     boolean hasCommandName();
@@ -1491,45 +1288,45 @@ public final class JOutPiqi {
     int getCommandArgsCount();
     com.google.protobuf.ByteString getCommandArgs(int index);
   }
-  public static final class gl_message extends
+  public static final class message extends
       com.google.protobuf.GeneratedMessage
-      implements gl_messageOrBuilder {
-    // Use gl_message.newBuilder() to construct.
-    private gl_message(Builder builder) {
+      implements messageOrBuilder {
+    // Use message.newBuilder() to construct.
+    private message(Builder builder) {
       super(builder);
     }
-    private gl_message(boolean noInit) {}
+    private message(boolean noInit) {}
     
-    private static final gl_message defaultInstance;
-    public static gl_message getDefaultInstance() {
+    private static final message defaultInstance;
+    public static message getDefaultInstance() {
       return defaultInstance;
     }
     
-    public gl_message getDefaultInstanceForType() {
+    public message getDefaultInstanceForType() {
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return JOutPiqi.internal_static_gl_message_descriptor;
+      return JOutPiqi.internal_static_message_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return JOutPiqi.internal_static_gl_message_fieldAccessorTable;
+      return JOutPiqi.internal_static_message_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required .gl_recipient recipient = 1;
+    // required .recipient recipient = 1;
     public static final int RECIPIENT_FIELD_NUMBER = 1;
-    private JOutPiqi.gl_recipient recipient_;
+    private JOutPiqi.recipient recipient_;
     public boolean hasRecipient() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public JOutPiqi.gl_recipient getRecipient() {
+    public JOutPiqi.recipient getRecipient() {
       return recipient_;
     }
-    public JOutPiqi.gl_recipientOrBuilder getRecipientOrBuilder() {
+    public JOutPiqi.recipientOrBuilder getRecipientOrBuilder() {
       return recipient_;
     }
     
@@ -1580,7 +1377,7 @@ public final class JOutPiqi {
     }
     
     private void initFields() {
-      recipient_ = JOutPiqi.gl_recipient.getDefaultInstance();
+      recipient_ = JOutPiqi.recipient.getDefaultInstance();
       commandName_ = "";
       commandArgs_ = java.util.Collections.emptyList();;
     }
@@ -1651,41 +1448,41 @@ public final class JOutPiqi {
       return super.writeReplace();
     }
     
-    public static JOutPiqi.gl_message parseFrom(
+    public static JOutPiqi.message parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.gl_message parseFrom(
+    public static JOutPiqi.message parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_message parseFrom(byte[] data)
+    public static JOutPiqi.message parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.gl_message parseFrom(
+    public static JOutPiqi.message parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_message parseFrom(java.io.InputStream input)
+    public static JOutPiqi.message parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.gl_message parseFrom(
+    public static JOutPiqi.message parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_message parseDelimitedFrom(java.io.InputStream input)
+    public static JOutPiqi.message parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -1694,7 +1491,7 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.gl_message parseDelimitedFrom(
+    public static JOutPiqi.message parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1705,12 +1502,12 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.gl_message parseFrom(
+    public static JOutPiqi.message parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.gl_message parseFrom(
+    public static JOutPiqi.message parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1720,7 +1517,7 @@ public final class JOutPiqi {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(JOutPiqi.gl_message prototype) {
+    public static Builder newBuilder(JOutPiqi.message prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -1733,18 +1530,18 @@ public final class JOutPiqi {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements JOutPiqi.gl_messageOrBuilder {
+       implements JOutPiqi.messageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return JOutPiqi.internal_static_gl_message_descriptor;
+        return JOutPiqi.internal_static_message_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return JOutPiqi.internal_static_gl_message_fieldAccessorTable;
+        return JOutPiqi.internal_static_message_fieldAccessorTable;
       }
       
-      // Construct using JOutPiqi.gl_message.newBuilder()
+      // Construct using JOutPiqi.message.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1765,7 +1562,7 @@ public final class JOutPiqi {
       public Builder clear() {
         super.clear();
         if (recipientBuilder_ == null) {
-          recipient_ = JOutPiqi.gl_recipient.getDefaultInstance();
+          recipient_ = JOutPiqi.recipient.getDefaultInstance();
         } else {
           recipientBuilder_.clear();
         }
@@ -1783,24 +1580,24 @@ public final class JOutPiqi {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return JOutPiqi.gl_message.getDescriptor();
+        return JOutPiqi.message.getDescriptor();
       }
       
-      public JOutPiqi.gl_message getDefaultInstanceForType() {
-        return JOutPiqi.gl_message.getDefaultInstance();
+      public JOutPiqi.message getDefaultInstanceForType() {
+        return JOutPiqi.message.getDefaultInstance();
       }
       
-      public JOutPiqi.gl_message build() {
-        JOutPiqi.gl_message result = buildPartial();
+      public JOutPiqi.message build() {
+        JOutPiqi.message result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private JOutPiqi.gl_message buildParsed()
+      private JOutPiqi.message buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        JOutPiqi.gl_message result = buildPartial();
+        JOutPiqi.message result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -1808,8 +1605,8 @@ public final class JOutPiqi {
         return result;
       }
       
-      public JOutPiqi.gl_message buildPartial() {
-        JOutPiqi.gl_message result = new JOutPiqi.gl_message(this);
+      public JOutPiqi.message buildPartial() {
+        JOutPiqi.message result = new JOutPiqi.message(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -1835,16 +1632,16 @@ public final class JOutPiqi {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof JOutPiqi.gl_message) {
-          return mergeFrom((JOutPiqi.gl_message)other);
+        if (other instanceof JOutPiqi.message) {
+          return mergeFrom((JOutPiqi.message)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(JOutPiqi.gl_message other) {
-        if (other == JOutPiqi.gl_message.getDefaultInstance()) return this;
+      public Builder mergeFrom(JOutPiqi.message other) {
+        if (other == JOutPiqi.message.getDefaultInstance()) return this;
         if (other.hasRecipient()) {
           mergeRecipient(other.getRecipient());
         }
@@ -1901,7 +1698,7 @@ public final class JOutPiqi {
               break;
             }
             case 10: {
-              JOutPiqi.gl_recipient.Builder subBuilder = JOutPiqi.gl_recipient.newBuilder();
+              JOutPiqi.recipient.Builder subBuilder = JOutPiqi.recipient.newBuilder();
               if (hasRecipient()) {
                 subBuilder.mergeFrom(getRecipient());
               }
@@ -1925,21 +1722,21 @@ public final class JOutPiqi {
       
       private int bitField0_;
       
-      // required .gl_recipient recipient = 1;
-      private JOutPiqi.gl_recipient recipient_ = JOutPiqi.gl_recipient.getDefaultInstance();
+      // required .recipient recipient = 1;
+      private JOutPiqi.recipient recipient_ = JOutPiqi.recipient.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          JOutPiqi.gl_recipient, JOutPiqi.gl_recipient.Builder, JOutPiqi.gl_recipientOrBuilder> recipientBuilder_;
+          JOutPiqi.recipient, JOutPiqi.recipient.Builder, JOutPiqi.recipientOrBuilder> recipientBuilder_;
       public boolean hasRecipient() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public JOutPiqi.gl_recipient getRecipient() {
+      public JOutPiqi.recipient getRecipient() {
         if (recipientBuilder_ == null) {
           return recipient_;
         } else {
           return recipientBuilder_.getMessage();
         }
       }
-      public Builder setRecipient(JOutPiqi.gl_recipient value) {
+      public Builder setRecipient(JOutPiqi.recipient value) {
         if (recipientBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1953,7 +1750,7 @@ public final class JOutPiqi {
         return this;
       }
       public Builder setRecipient(
-          JOutPiqi.gl_recipient.Builder builderForValue) {
+          JOutPiqi.recipient.Builder builderForValue) {
         if (recipientBuilder_ == null) {
           recipient_ = builderForValue.build();
           onChanged();
@@ -1963,12 +1760,12 @@ public final class JOutPiqi {
         bitField0_ |= 0x00000001;
         return this;
       }
-      public Builder mergeRecipient(JOutPiqi.gl_recipient value) {
+      public Builder mergeRecipient(JOutPiqi.recipient value) {
         if (recipientBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              recipient_ != JOutPiqi.gl_recipient.getDefaultInstance()) {
+              recipient_ != JOutPiqi.recipient.getDefaultInstance()) {
             recipient_ =
-              JOutPiqi.gl_recipient.newBuilder(recipient_).mergeFrom(value).buildPartial();
+              JOutPiqi.recipient.newBuilder(recipient_).mergeFrom(value).buildPartial();
           } else {
             recipient_ = value;
           }
@@ -1981,7 +1778,7 @@ public final class JOutPiqi {
       }
       public Builder clearRecipient() {
         if (recipientBuilder_ == null) {
-          recipient_ = JOutPiqi.gl_recipient.getDefaultInstance();
+          recipient_ = JOutPiqi.recipient.getDefaultInstance();
           onChanged();
         } else {
           recipientBuilder_.clear();
@@ -1989,12 +1786,12 @@ public final class JOutPiqi {
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
-      public JOutPiqi.gl_recipient.Builder getRecipientBuilder() {
+      public JOutPiqi.recipient.Builder getRecipientBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
         return getRecipientFieldBuilder().getBuilder();
       }
-      public JOutPiqi.gl_recipientOrBuilder getRecipientOrBuilder() {
+      public JOutPiqi.recipientOrBuilder getRecipientOrBuilder() {
         if (recipientBuilder_ != null) {
           return recipientBuilder_.getMessageOrBuilder();
         } else {
@@ -2002,11 +1799,11 @@ public final class JOutPiqi {
         }
       }
       private com.google.protobuf.SingleFieldBuilder<
-          JOutPiqi.gl_recipient, JOutPiqi.gl_recipient.Builder, JOutPiqi.gl_recipientOrBuilder> 
+          JOutPiqi.recipient, JOutPiqi.recipient.Builder, JOutPiqi.recipientOrBuilder> 
           getRecipientFieldBuilder() {
         if (recipientBuilder_ == null) {
           recipientBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              JOutPiqi.gl_recipient, JOutPiqi.gl_recipient.Builder, JOutPiqi.gl_recipientOrBuilder>(
+              JOutPiqi.recipient, JOutPiqi.recipient.Builder, JOutPiqi.recipientOrBuilder>(
                   recipient_,
                   getParentForChildren(),
                   isClean());
@@ -2102,23 +1899,23 @@ public final class JOutPiqi {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:gl_message)
+      // @@protoc_insertion_point(builder_scope:message)
     }
     
     static {
-      defaultInstance = new gl_message(true);
+      defaultInstance = new message(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:gl_message)
+    // @@protoc_insertion_point(class_scope:message)
   }
   
-  public interface gl_timerOrBuilder
+  public interface timerOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required bytes timer_identifier = 1;
-    boolean hasTimerIdentifier();
-    com.google.protobuf.ByteString getTimerIdentifier();
+    // required string id = 1;
+    boolean hasId();
+    String getId();
     
     // required uint32 duration_in_ms = 2;
     boolean hasDurationInMs();
@@ -2128,43 +1925,65 @@ public final class JOutPiqi {
     boolean hasTickDurationInMs();
     int getTickDurationInMs();
   }
-  public static final class gl_timer extends
+  public static final class timer extends
       com.google.protobuf.GeneratedMessage
-      implements gl_timerOrBuilder {
-    // Use gl_timer.newBuilder() to construct.
-    private gl_timer(Builder builder) {
+      implements timerOrBuilder {
+    // Use timer.newBuilder() to construct.
+    private timer(Builder builder) {
       super(builder);
     }
-    private gl_timer(boolean noInit) {}
+    private timer(boolean noInit) {}
     
-    private static final gl_timer defaultInstance;
-    public static gl_timer getDefaultInstance() {
+    private static final timer defaultInstance;
+    public static timer getDefaultInstance() {
       return defaultInstance;
     }
     
-    public gl_timer getDefaultInstanceForType() {
+    public timer getDefaultInstanceForType() {
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return JOutPiqi.internal_static_gl_timer_descriptor;
+      return JOutPiqi.internal_static_timer_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return JOutPiqi.internal_static_gl_timer_fieldAccessorTable;
+      return JOutPiqi.internal_static_timer_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required bytes timer_identifier = 1;
-    public static final int TIMER_IDENTIFIER_FIELD_NUMBER = 1;
-    private com.google.protobuf.ByteString timerIdentifier_;
-    public boolean hasTimerIdentifier() {
+    // required string id = 1;
+    public static final int ID_FIELD_NUMBER = 1;
+    private java.lang.Object id_;
+    public boolean hasId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public com.google.protobuf.ByteString getTimerIdentifier() {
-      return timerIdentifier_;
+    public String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          id_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
     
     // required uint32 duration_in_ms = 2;
@@ -2188,7 +2007,7 @@ public final class JOutPiqi {
     }
     
     private void initFields() {
-      timerIdentifier_ = com.google.protobuf.ByteString.EMPTY;
+      id_ = "";
       durationInMs_ = 0;
       tickDurationInMs_ = 0;
     }
@@ -2197,7 +2016,7 @@ public final class JOutPiqi {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasTimerIdentifier()) {
+      if (!hasId()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -2217,7 +2036,7 @@ public final class JOutPiqi {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, timerIdentifier_);
+        output.writeBytes(1, getIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeUInt32(2, durationInMs_);
@@ -2236,7 +2055,7 @@ public final class JOutPiqi {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, timerIdentifier_);
+          .computeBytesSize(1, getIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2258,41 +2077,41 @@ public final class JOutPiqi {
       return super.writeReplace();
     }
     
-    public static JOutPiqi.gl_timer parseFrom(
+    public static JOutPiqi.timer parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.gl_timer parseFrom(
+    public static JOutPiqi.timer parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_timer parseFrom(byte[] data)
+    public static JOutPiqi.timer parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.gl_timer parseFrom(
+    public static JOutPiqi.timer parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_timer parseFrom(java.io.InputStream input)
+    public static JOutPiqi.timer parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.gl_timer parseFrom(
+    public static JOutPiqi.timer parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.gl_timer parseDelimitedFrom(java.io.InputStream input)
+    public static JOutPiqi.timer parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -2301,7 +2120,7 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.gl_timer parseDelimitedFrom(
+    public static JOutPiqi.timer parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2312,12 +2131,12 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.gl_timer parseFrom(
+    public static JOutPiqi.timer parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.gl_timer parseFrom(
+    public static JOutPiqi.timer parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2327,7 +2146,7 @@ public final class JOutPiqi {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(JOutPiqi.gl_timer prototype) {
+    public static Builder newBuilder(JOutPiqi.timer prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -2340,18 +2159,18 @@ public final class JOutPiqi {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements JOutPiqi.gl_timerOrBuilder {
+       implements JOutPiqi.timerOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return JOutPiqi.internal_static_gl_timer_descriptor;
+        return JOutPiqi.internal_static_timer_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return JOutPiqi.internal_static_gl_timer_fieldAccessorTable;
+        return JOutPiqi.internal_static_timer_fieldAccessorTable;
       }
       
-      // Construct using JOutPiqi.gl_timer.newBuilder()
+      // Construct using JOutPiqi.timer.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2370,7 +2189,7 @@ public final class JOutPiqi {
       
       public Builder clear() {
         super.clear();
-        timerIdentifier_ = com.google.protobuf.ByteString.EMPTY;
+        id_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         durationInMs_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -2385,24 +2204,24 @@ public final class JOutPiqi {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return JOutPiqi.gl_timer.getDescriptor();
+        return JOutPiqi.timer.getDescriptor();
       }
       
-      public JOutPiqi.gl_timer getDefaultInstanceForType() {
-        return JOutPiqi.gl_timer.getDefaultInstance();
+      public JOutPiqi.timer getDefaultInstanceForType() {
+        return JOutPiqi.timer.getDefaultInstance();
       }
       
-      public JOutPiqi.gl_timer build() {
-        JOutPiqi.gl_timer result = buildPartial();
+      public JOutPiqi.timer build() {
+        JOutPiqi.timer result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private JOutPiqi.gl_timer buildParsed()
+      private JOutPiqi.timer buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        JOutPiqi.gl_timer result = buildPartial();
+        JOutPiqi.timer result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -2410,14 +2229,14 @@ public final class JOutPiqi {
         return result;
       }
       
-      public JOutPiqi.gl_timer buildPartial() {
-        JOutPiqi.gl_timer result = new JOutPiqi.gl_timer(this);
+      public JOutPiqi.timer buildPartial() {
+        JOutPiqi.timer result = new JOutPiqi.timer(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.timerIdentifier_ = timerIdentifier_;
+        result.id_ = id_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -2432,18 +2251,18 @@ public final class JOutPiqi {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof JOutPiqi.gl_timer) {
-          return mergeFrom((JOutPiqi.gl_timer)other);
+        if (other instanceof JOutPiqi.timer) {
+          return mergeFrom((JOutPiqi.timer)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(JOutPiqi.gl_timer other) {
-        if (other == JOutPiqi.gl_timer.getDefaultInstance()) return this;
-        if (other.hasTimerIdentifier()) {
-          setTimerIdentifier(other.getTimerIdentifier());
+      public Builder mergeFrom(JOutPiqi.timer other) {
+        if (other == JOutPiqi.timer.getDefaultInstance()) return this;
+        if (other.hasId()) {
+          setId(other.getId());
         }
         if (other.hasDurationInMs()) {
           setDurationInMs(other.getDurationInMs());
@@ -2456,7 +2275,7 @@ public final class JOutPiqi {
       }
       
       public final boolean isInitialized() {
-        if (!hasTimerIdentifier()) {
+        if (!hasId()) {
           
           return false;
         }
@@ -2496,7 +2315,7 @@ public final class JOutPiqi {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              timerIdentifier_ = input.readBytes();
+              id_ = input.readBytes();
               break;
             }
             case 16: {
@@ -2515,28 +2334,40 @@ public final class JOutPiqi {
       
       private int bitField0_;
       
-      // required bytes timer_identifier = 1;
-      private com.google.protobuf.ByteString timerIdentifier_ = com.google.protobuf.ByteString.EMPTY;
-      public boolean hasTimerIdentifier() {
+      // required string id = 1;
+      private java.lang.Object id_ = "";
+      public boolean hasId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public com.google.protobuf.ByteString getTimerIdentifier() {
-        return timerIdentifier_;
+      public String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          id_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
       }
-      public Builder setTimerIdentifier(com.google.protobuf.ByteString value) {
+      public Builder setId(String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        timerIdentifier_ = value;
+        id_ = value;
         onChanged();
         return this;
       }
-      public Builder clearTimerIdentifier() {
+      public Builder clearId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        timerIdentifier_ = getDefaultInstance().getTimerIdentifier();
+        id_ = getDefaultInstance().getId();
         onChanged();
         return this;
+      }
+      void setId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
       }
       
       // required uint32 duration_in_ms = 2;
@@ -2581,179 +2412,158 @@ public final class JOutPiqi {
         return this;
       }
       
-      // @@protoc_insertion_point(builder_scope:gl_timer)
+      // @@protoc_insertion_point(builder_scope:timer)
     }
     
     static {
-      defaultInstance = new gl_timer(true);
+      defaultInstance = new timer(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:gl_timer)
+    // @@protoc_insertion_point(class_scope:timer)
   }
   
-  public interface callback_returnOrBuilder
+  public interface actionOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required bytes new_state = 1;
-    boolean hasNewState();
-    com.google.protobuf.ByteString getNewState();
+    // optional string stop_timer = 1;
+    boolean hasStopTimer();
+    String getStopTimer();
     
-    // repeated .gl_command commands = 2;
-    java.util.List<JOutPiqi.gl_command> 
-        getCommandsList();
-    JOutPiqi.gl_command getCommands(int index);
-    int getCommandsCount();
-    java.util.List<? extends JOutPiqi.gl_commandOrBuilder> 
-        getCommandsOrBuilderList();
-    JOutPiqi.gl_commandOrBuilder getCommandsOrBuilder(
-        int index);
+    // optional .timer start_timer = 2;
+    boolean hasStartTimer();
+    JOutPiqi.timer getStartTimer();
+    JOutPiqi.timerOrBuilder getStartTimerOrBuilder();
     
-    // repeated .gl_message messages = 3;
-    java.util.List<JOutPiqi.gl_message> 
-        getMessagesList();
-    JOutPiqi.gl_message getMessages(int index);
-    int getMessagesCount();
-    java.util.List<? extends JOutPiqi.gl_messageOrBuilder> 
-        getMessagesOrBuilderList();
-    JOutPiqi.gl_messageOrBuilder getMessagesOrBuilder(
-        int index);
+    // optional .userid_list kick_player = 3;
+    boolean hasKickPlayer();
+    JOutPiqi.userid_list getKickPlayer();
+    JOutPiqi.userid_listOrBuilder getKickPlayerOrBuilder();
     
-    // repeated .gl_timer timers = 4;
-    java.util.List<JOutPiqi.gl_timer> 
-        getTimersList();
-    JOutPiqi.gl_timer getTimers(int index);
-    int getTimersCount();
-    java.util.List<? extends JOutPiqi.gl_timerOrBuilder> 
-        getTimersOrBuilderList();
-    JOutPiqi.gl_timerOrBuilder getTimersOrBuilder(
-        int index);
+    // optional .message message = 4;
+    boolean hasMessage();
+    JOutPiqi.message getMessage();
+    JOutPiqi.messageOrBuilder getMessageOrBuilder();
   }
-  public static final class callback_return extends
+  public static final class action extends
       com.google.protobuf.GeneratedMessage
-      implements callback_returnOrBuilder {
-    // Use callback_return.newBuilder() to construct.
-    private callback_return(Builder builder) {
+      implements actionOrBuilder {
+    // Use action.newBuilder() to construct.
+    private action(Builder builder) {
       super(builder);
     }
-    private callback_return(boolean noInit) {}
+    private action(boolean noInit) {}
     
-    private static final callback_return defaultInstance;
-    public static callback_return getDefaultInstance() {
+    private static final action defaultInstance;
+    public static action getDefaultInstance() {
       return defaultInstance;
     }
     
-    public callback_return getDefaultInstanceForType() {
+    public action getDefaultInstanceForType() {
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return JOutPiqi.internal_static_callback_return_descriptor;
+      return JOutPiqi.internal_static_action_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return JOutPiqi.internal_static_callback_return_fieldAccessorTable;
+      return JOutPiqi.internal_static_action_fieldAccessorTable;
     }
     
     private int bitField0_;
-    // required bytes new_state = 1;
-    public static final int NEW_STATE_FIELD_NUMBER = 1;
-    private com.google.protobuf.ByteString newState_;
-    public boolean hasNewState() {
+    // optional string stop_timer = 1;
+    public static final int STOP_TIMER_FIELD_NUMBER = 1;
+    private java.lang.Object stopTimer_;
+    public boolean hasStopTimer() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public com.google.protobuf.ByteString getNewState() {
-      return newState_;
+    public String getStopTimer() {
+      java.lang.Object ref = stopTimer_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          stopTimer_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getStopTimerBytes() {
+      java.lang.Object ref = stopTimer_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        stopTimer_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
     
-    // repeated .gl_command commands = 2;
-    public static final int COMMANDS_FIELD_NUMBER = 2;
-    private java.util.List<JOutPiqi.gl_command> commands_;
-    public java.util.List<JOutPiqi.gl_command> getCommandsList() {
-      return commands_;
+    // optional .timer start_timer = 2;
+    public static final int START_TIMER_FIELD_NUMBER = 2;
+    private JOutPiqi.timer startTimer_;
+    public boolean hasStartTimer() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public java.util.List<? extends JOutPiqi.gl_commandOrBuilder> 
-        getCommandsOrBuilderList() {
-      return commands_;
+    public JOutPiqi.timer getStartTimer() {
+      return startTimer_;
     }
-    public int getCommandsCount() {
-      return commands_.size();
-    }
-    public JOutPiqi.gl_command getCommands(int index) {
-      return commands_.get(index);
-    }
-    public JOutPiqi.gl_commandOrBuilder getCommandsOrBuilder(
-        int index) {
-      return commands_.get(index);
+    public JOutPiqi.timerOrBuilder getStartTimerOrBuilder() {
+      return startTimer_;
     }
     
-    // repeated .gl_message messages = 3;
-    public static final int MESSAGES_FIELD_NUMBER = 3;
-    private java.util.List<JOutPiqi.gl_message> messages_;
-    public java.util.List<JOutPiqi.gl_message> getMessagesList() {
-      return messages_;
+    // optional .userid_list kick_player = 3;
+    public static final int KICK_PLAYER_FIELD_NUMBER = 3;
+    private JOutPiqi.userid_list kickPlayer_;
+    public boolean hasKickPlayer() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    public java.util.List<? extends JOutPiqi.gl_messageOrBuilder> 
-        getMessagesOrBuilderList() {
-      return messages_;
+    public JOutPiqi.userid_list getKickPlayer() {
+      return kickPlayer_;
     }
-    public int getMessagesCount() {
-      return messages_.size();
-    }
-    public JOutPiqi.gl_message getMessages(int index) {
-      return messages_.get(index);
-    }
-    public JOutPiqi.gl_messageOrBuilder getMessagesOrBuilder(
-        int index) {
-      return messages_.get(index);
+    public JOutPiqi.userid_listOrBuilder getKickPlayerOrBuilder() {
+      return kickPlayer_;
     }
     
-    // repeated .gl_timer timers = 4;
-    public static final int TIMERS_FIELD_NUMBER = 4;
-    private java.util.List<JOutPiqi.gl_timer> timers_;
-    public java.util.List<JOutPiqi.gl_timer> getTimersList() {
-      return timers_;
+    // optional .message message = 4;
+    public static final int MESSAGE_FIELD_NUMBER = 4;
+    private JOutPiqi.message message_;
+    public boolean hasMessage() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
-    public java.util.List<? extends JOutPiqi.gl_timerOrBuilder> 
-        getTimersOrBuilderList() {
-      return timers_;
+    public JOutPiqi.message getMessage() {
+      return message_;
     }
-    public int getTimersCount() {
-      return timers_.size();
-    }
-    public JOutPiqi.gl_timer getTimers(int index) {
-      return timers_.get(index);
-    }
-    public JOutPiqi.gl_timerOrBuilder getTimersOrBuilder(
-        int index) {
-      return timers_.get(index);
+    public JOutPiqi.messageOrBuilder getMessageOrBuilder() {
+      return message_;
     }
     
     private void initFields() {
-      newState_ = com.google.protobuf.ByteString.EMPTY;
-      commands_ = java.util.Collections.emptyList();
-      messages_ = java.util.Collections.emptyList();
-      timers_ = java.util.Collections.emptyList();
+      stopTimer_ = "";
+      startTimer_ = JOutPiqi.timer.getDefaultInstance();
+      kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
+      message_ = JOutPiqi.message.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasNewState()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      for (int i = 0; i < getMessagesCount(); i++) {
-        if (!getMessages(i).isInitialized()) {
+      if (hasStartTimer()) {
+        if (!getStartTimer().isInitialized()) {
           memoizedIsInitialized = 0;
           return false;
         }
       }
-      for (int i = 0; i < getTimersCount(); i++) {
-        if (!getTimers(i).isInitialized()) {
+      if (hasMessage()) {
+        if (!getMessage().isInitialized()) {
           memoizedIsInitialized = 0;
           return false;
         }
@@ -2766,16 +2576,16 @@ public final class JOutPiqi {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, newState_);
+        output.writeBytes(1, getStopTimerBytes());
       }
-      for (int i = 0; i < commands_.size(); i++) {
-        output.writeMessage(2, commands_.get(i));
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, startTimer_);
       }
-      for (int i = 0; i < messages_.size(); i++) {
-        output.writeMessage(3, messages_.get(i));
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeMessage(3, kickPlayer_);
       }
-      for (int i = 0; i < timers_.size(); i++) {
-        output.writeMessage(4, timers_.get(i));
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeMessage(4, message_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2788,19 +2598,19 @@ public final class JOutPiqi {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, newState_);
+          .computeBytesSize(1, getStopTimerBytes());
       }
-      for (int i = 0; i < commands_.size(); i++) {
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, commands_.get(i));
+          .computeMessageSize(2, startTimer_);
       }
-      for (int i = 0; i < messages_.size(); i++) {
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, messages_.get(i));
+          .computeMessageSize(3, kickPlayer_);
       }
-      for (int i = 0; i < timers_.size(); i++) {
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, timers_.get(i));
+          .computeMessageSize(4, message_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2814,41 +2624,41 @@ public final class JOutPiqi {
       return super.writeReplace();
     }
     
-    public static JOutPiqi.callback_return parseFrom(
+    public static JOutPiqi.action parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.callback_return parseFrom(
+    public static JOutPiqi.action parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.callback_return parseFrom(byte[] data)
+    public static JOutPiqi.action parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JOutPiqi.callback_return parseFrom(
+    public static JOutPiqi.action parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.callback_return parseFrom(java.io.InputStream input)
+    public static JOutPiqi.action parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.callback_return parseFrom(
+    public static JOutPiqi.action parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static JOutPiqi.callback_return parseDelimitedFrom(java.io.InputStream input)
+    public static JOutPiqi.action parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -2857,7 +2667,7 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.callback_return parseDelimitedFrom(
+    public static JOutPiqi.action parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2868,12 +2678,12 @@ public final class JOutPiqi {
         return null;
       }
     }
-    public static JOutPiqi.callback_return parseFrom(
+    public static JOutPiqi.action parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JOutPiqi.callback_return parseFrom(
+    public static JOutPiqi.action parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2883,7 +2693,7 @@ public final class JOutPiqi {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(JOutPiqi.callback_return prototype) {
+    public static Builder newBuilder(JOutPiqi.action prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -2896,18 +2706,18 @@ public final class JOutPiqi {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements JOutPiqi.callback_returnOrBuilder {
+       implements JOutPiqi.actionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return JOutPiqi.internal_static_callback_return_descriptor;
+        return JOutPiqi.internal_static_action_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return JOutPiqi.internal_static_callback_return_fieldAccessorTable;
+        return JOutPiqi.internal_static_action_fieldAccessorTable;
       }
       
-      // Construct using JOutPiqi.callback_return.newBuilder()
+      // Construct using JOutPiqi.action.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2918,9 +2728,9 @@ public final class JOutPiqi {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getCommandsFieldBuilder();
-          getMessagesFieldBuilder();
-          getTimersFieldBuilder();
+          getStartTimerFieldBuilder();
+          getKickPlayerFieldBuilder();
+          getMessageFieldBuilder();
         }
       }
       private static Builder create() {
@@ -2929,26 +2739,26 @@ public final class JOutPiqi {
       
       public Builder clear() {
         super.clear();
-        newState_ = com.google.protobuf.ByteString.EMPTY;
+        stopTimer_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        if (commandsBuilder_ == null) {
-          commands_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
+        if (startTimerBuilder_ == null) {
+          startTimer_ = JOutPiqi.timer.getDefaultInstance();
         } else {
-          commandsBuilder_.clear();
+          startTimerBuilder_.clear();
         }
-        if (messagesBuilder_ == null) {
-          messages_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (kickPlayerBuilder_ == null) {
+          kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
         } else {
-          messagesBuilder_.clear();
+          kickPlayerBuilder_.clear();
         }
-        if (timersBuilder_ == null) {
-          timers_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000004);
+        if (messageBuilder_ == null) {
+          message_ = JOutPiqi.message.getDefaultInstance();
         } else {
-          timersBuilder_.clear();
+          messageBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
       
@@ -2958,24 +2768,24 @@ public final class JOutPiqi {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return JOutPiqi.callback_return.getDescriptor();
+        return JOutPiqi.action.getDescriptor();
       }
       
-      public JOutPiqi.callback_return getDefaultInstanceForType() {
-        return JOutPiqi.callback_return.getDefaultInstance();
+      public JOutPiqi.action getDefaultInstanceForType() {
+        return JOutPiqi.action.getDefaultInstance();
       }
       
-      public JOutPiqi.callback_return build() {
-        JOutPiqi.callback_return result = buildPartial();
+      public JOutPiqi.action build() {
+        JOutPiqi.action result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private JOutPiqi.callback_return buildParsed()
+      private JOutPiqi.action buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        JOutPiqi.callback_return result = buildPartial();
+        JOutPiqi.action result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -2983,40 +2793,37 @@ public final class JOutPiqi {
         return result;
       }
       
-      public JOutPiqi.callback_return buildPartial() {
-        JOutPiqi.callback_return result = new JOutPiqi.callback_return(this);
+      public JOutPiqi.action buildPartial() {
+        JOutPiqi.action result = new JOutPiqi.action(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.newState_ = newState_;
-        if (commandsBuilder_ == null) {
-          if (((bitField0_ & 0x00000002) == 0x00000002)) {
-            commands_ = java.util.Collections.unmodifiableList(commands_);
-            bitField0_ = (bitField0_ & ~0x00000002);
-          }
-          result.commands_ = commands_;
-        } else {
-          result.commands_ = commandsBuilder_.build();
+        result.stopTimer_ = stopTimer_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
         }
-        if (messagesBuilder_ == null) {
-          if (((bitField0_ & 0x00000004) == 0x00000004)) {
-            messages_ = java.util.Collections.unmodifiableList(messages_);
-            bitField0_ = (bitField0_ & ~0x00000004);
-          }
-          result.messages_ = messages_;
+        if (startTimerBuilder_ == null) {
+          result.startTimer_ = startTimer_;
         } else {
-          result.messages_ = messagesBuilder_.build();
+          result.startTimer_ = startTimerBuilder_.build();
         }
-        if (timersBuilder_ == null) {
-          if (((bitField0_ & 0x00000008) == 0x00000008)) {
-            timers_ = java.util.Collections.unmodifiableList(timers_);
-            bitField0_ = (bitField0_ & ~0x00000008);
-          }
-          result.timers_ = timers_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        if (kickPlayerBuilder_ == null) {
+          result.kickPlayer_ = kickPlayer_;
         } else {
-          result.timers_ = timersBuilder_.build();
+          result.kickPlayer_ = kickPlayerBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        if (messageBuilder_ == null) {
+          result.message_ = message_;
+        } else {
+          result.message_ = messageBuilder_.build();
         }
         result.bitField0_ = to_bitField0_;
         onBuilt();
@@ -3024,114 +2831,41 @@ public final class JOutPiqi {
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof JOutPiqi.callback_return) {
-          return mergeFrom((JOutPiqi.callback_return)other);
+        if (other instanceof JOutPiqi.action) {
+          return mergeFrom((JOutPiqi.action)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(JOutPiqi.callback_return other) {
-        if (other == JOutPiqi.callback_return.getDefaultInstance()) return this;
-        if (other.hasNewState()) {
-          setNewState(other.getNewState());
+      public Builder mergeFrom(JOutPiqi.action other) {
+        if (other == JOutPiqi.action.getDefaultInstance()) return this;
+        if (other.hasStopTimer()) {
+          setStopTimer(other.getStopTimer());
         }
-        if (commandsBuilder_ == null) {
-          if (!other.commands_.isEmpty()) {
-            if (commands_.isEmpty()) {
-              commands_ = other.commands_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-            } else {
-              ensureCommandsIsMutable();
-              commands_.addAll(other.commands_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.commands_.isEmpty()) {
-            if (commandsBuilder_.isEmpty()) {
-              commandsBuilder_.dispose();
-              commandsBuilder_ = null;
-              commands_ = other.commands_;
-              bitField0_ = (bitField0_ & ~0x00000002);
-              commandsBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getCommandsFieldBuilder() : null;
-            } else {
-              commandsBuilder_.addAllMessages(other.commands_);
-            }
-          }
+        if (other.hasStartTimer()) {
+          mergeStartTimer(other.getStartTimer());
         }
-        if (messagesBuilder_ == null) {
-          if (!other.messages_.isEmpty()) {
-            if (messages_.isEmpty()) {
-              messages_ = other.messages_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-            } else {
-              ensureMessagesIsMutable();
-              messages_.addAll(other.messages_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.messages_.isEmpty()) {
-            if (messagesBuilder_.isEmpty()) {
-              messagesBuilder_.dispose();
-              messagesBuilder_ = null;
-              messages_ = other.messages_;
-              bitField0_ = (bitField0_ & ~0x00000004);
-              messagesBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getMessagesFieldBuilder() : null;
-            } else {
-              messagesBuilder_.addAllMessages(other.messages_);
-            }
-          }
+        if (other.hasKickPlayer()) {
+          mergeKickPlayer(other.getKickPlayer());
         }
-        if (timersBuilder_ == null) {
-          if (!other.timers_.isEmpty()) {
-            if (timers_.isEmpty()) {
-              timers_ = other.timers_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-            } else {
-              ensureTimersIsMutable();
-              timers_.addAll(other.timers_);
-            }
-            onChanged();
-          }
-        } else {
-          if (!other.timers_.isEmpty()) {
-            if (timersBuilder_.isEmpty()) {
-              timersBuilder_.dispose();
-              timersBuilder_ = null;
-              timers_ = other.timers_;
-              bitField0_ = (bitField0_ & ~0x00000008);
-              timersBuilder_ = 
-                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
-                   getTimersFieldBuilder() : null;
-            } else {
-              timersBuilder_.addAllMessages(other.timers_);
-            }
-          }
+        if (other.hasMessage()) {
+          mergeMessage(other.getMessage());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
       
       public final boolean isInitialized() {
-        if (!hasNewState()) {
-          
-          return false;
-        }
-        for (int i = 0; i < getMessagesCount(); i++) {
-          if (!getMessages(i).isInitialized()) {
+        if (hasStartTimer()) {
+          if (!getStartTimer().isInitialized()) {
             
             return false;
           }
         }
-        for (int i = 0; i < getTimersCount(); i++) {
-          if (!getTimers(i).isInitialized()) {
+        if (hasMessage()) {
+          if (!getMessage().isInitialized()) {
             
             return false;
           }
@@ -3164,25 +2898,34 @@ public final class JOutPiqi {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              newState_ = input.readBytes();
+              stopTimer_ = input.readBytes();
               break;
             }
             case 18: {
-              JOutPiqi.gl_command.Builder subBuilder = JOutPiqi.gl_command.newBuilder();
+              JOutPiqi.timer.Builder subBuilder = JOutPiqi.timer.newBuilder();
+              if (hasStartTimer()) {
+                subBuilder.mergeFrom(getStartTimer());
+              }
               input.readMessage(subBuilder, extensionRegistry);
-              addCommands(subBuilder.buildPartial());
+              setStartTimer(subBuilder.buildPartial());
               break;
             }
             case 26: {
-              JOutPiqi.gl_message.Builder subBuilder = JOutPiqi.gl_message.newBuilder();
+              JOutPiqi.userid_list.Builder subBuilder = JOutPiqi.userid_list.newBuilder();
+              if (hasKickPlayer()) {
+                subBuilder.mergeFrom(getKickPlayer());
+              }
               input.readMessage(subBuilder, extensionRegistry);
-              addMessages(subBuilder.buildPartial());
+              setKickPlayer(subBuilder.buildPartial());
               break;
             }
             case 34: {
-              JOutPiqi.gl_timer.Builder subBuilder = JOutPiqi.gl_timer.newBuilder();
+              JOutPiqi.message.Builder subBuilder = JOutPiqi.message.newBuilder();
+              if (hasMessage()) {
+                subBuilder.mergeFrom(getMessage());
+              }
               input.readMessage(subBuilder, extensionRegistry);
-              addTimers(subBuilder.buildPartial());
+              setMessage(subBuilder.buildPartial());
               break;
             }
           }
@@ -3191,597 +2934,1697 @@ public final class JOutPiqi {
       
       private int bitField0_;
       
-      // required bytes new_state = 1;
-      private com.google.protobuf.ByteString newState_ = com.google.protobuf.ByteString.EMPTY;
-      public boolean hasNewState() {
+      // optional string stop_timer = 1;
+      private java.lang.Object stopTimer_ = "";
+      public boolean hasStopTimer() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public com.google.protobuf.ByteString getNewState() {
-        return newState_;
+      public String getStopTimer() {
+        java.lang.Object ref = stopTimer_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          stopTimer_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
       }
-      public Builder setNewState(com.google.protobuf.ByteString value) {
+      public Builder setStopTimer(String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        newState_ = value;
+        stopTimer_ = value;
         onChanged();
         return this;
       }
-      public Builder clearNewState() {
+      public Builder clearStopTimer() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        newState_ = getDefaultInstance().getNewState();
+        stopTimer_ = getDefaultInstance().getStopTimer();
         onChanged();
         return this;
       }
-      
-      // repeated .gl_command commands = 2;
-      private java.util.List<JOutPiqi.gl_command> commands_ =
-        java.util.Collections.emptyList();
-      private void ensureCommandsIsMutable() {
-        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
-          commands_ = new java.util.ArrayList<JOutPiqi.gl_command>(commands_);
-          bitField0_ |= 0x00000002;
-         }
+      void setStopTimer(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        stopTimer_ = value;
+        onChanged();
       }
       
-      private com.google.protobuf.RepeatedFieldBuilder<
-          JOutPiqi.gl_command, JOutPiqi.gl_command.Builder, JOutPiqi.gl_commandOrBuilder> commandsBuilder_;
-      
-      public java.util.List<JOutPiqi.gl_command> getCommandsList() {
-        if (commandsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(commands_);
+      // optional .timer start_timer = 2;
+      private JOutPiqi.timer startTimer_ = JOutPiqi.timer.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.timer, JOutPiqi.timer.Builder, JOutPiqi.timerOrBuilder> startTimerBuilder_;
+      public boolean hasStartTimer() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public JOutPiqi.timer getStartTimer() {
+        if (startTimerBuilder_ == null) {
+          return startTimer_;
         } else {
-          return commandsBuilder_.getMessageList();
+          return startTimerBuilder_.getMessage();
         }
       }
-      public int getCommandsCount() {
-        if (commandsBuilder_ == null) {
-          return commands_.size();
-        } else {
-          return commandsBuilder_.getCount();
-        }
-      }
-      public JOutPiqi.gl_command getCommands(int index) {
-        if (commandsBuilder_ == null) {
-          return commands_.get(index);
-        } else {
-          return commandsBuilder_.getMessage(index);
-        }
-      }
-      public Builder setCommands(
-          int index, JOutPiqi.gl_command value) {
-        if (commandsBuilder_ == null) {
+      public Builder setStartTimer(JOutPiqi.timer value) {
+        if (startTimerBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureCommandsIsMutable();
-          commands_.set(index, value);
+          startTimer_ = value;
           onChanged();
         } else {
-          commandsBuilder_.setMessage(index, value);
+          startTimerBuilder_.setMessage(value);
         }
+        bitField0_ |= 0x00000002;
         return this;
       }
-      public Builder setCommands(
-          int index, JOutPiqi.gl_command.Builder builderForValue) {
-        if (commandsBuilder_ == null) {
-          ensureCommandsIsMutable();
-          commands_.set(index, builderForValue.build());
+      public Builder setStartTimer(
+          JOutPiqi.timer.Builder builderForValue) {
+        if (startTimerBuilder_ == null) {
+          startTimer_ = builderForValue.build();
           onChanged();
         } else {
-          commandsBuilder_.setMessage(index, builderForValue.build());
+          startTimerBuilder_.setMessage(builderForValue.build());
         }
+        bitField0_ |= 0x00000002;
         return this;
       }
-      public Builder addCommands(JOutPiqi.gl_command value) {
-        if (commandsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
+      public Builder mergeStartTimer(JOutPiqi.timer value) {
+        if (startTimerBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              startTimer_ != JOutPiqi.timer.getDefaultInstance()) {
+            startTimer_ =
+              JOutPiqi.timer.newBuilder(startTimer_).mergeFrom(value).buildPartial();
+          } else {
+            startTimer_ = value;
           }
-          ensureCommandsIsMutable();
-          commands_.add(value);
           onChanged();
         } else {
-          commandsBuilder_.addMessage(value);
+          startTimerBuilder_.mergeFrom(value);
         }
+        bitField0_ |= 0x00000002;
         return this;
       }
-      public Builder addCommands(
-          int index, JOutPiqi.gl_command value) {
-        if (commandsBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureCommandsIsMutable();
-          commands_.add(index, value);
+      public Builder clearStartTimer() {
+        if (startTimerBuilder_ == null) {
+          startTimer_ = JOutPiqi.timer.getDefaultInstance();
           onChanged();
         } else {
-          commandsBuilder_.addMessage(index, value);
+          startTimerBuilder_.clear();
         }
+        bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
-      public Builder addCommands(
-          JOutPiqi.gl_command.Builder builderForValue) {
-        if (commandsBuilder_ == null) {
-          ensureCommandsIsMutable();
-          commands_.add(builderForValue.build());
-          onChanged();
+      public JOutPiqi.timer.Builder getStartTimerBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getStartTimerFieldBuilder().getBuilder();
+      }
+      public JOutPiqi.timerOrBuilder getStartTimerOrBuilder() {
+        if (startTimerBuilder_ != null) {
+          return startTimerBuilder_.getMessageOrBuilder();
         } else {
-          commandsBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addCommands(
-          int index, JOutPiqi.gl_command.Builder builderForValue) {
-        if (commandsBuilder_ == null) {
-          ensureCommandsIsMutable();
-          commands_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          commandsBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addAllCommands(
-          java.lang.Iterable<? extends JOutPiqi.gl_command> values) {
-        if (commandsBuilder_ == null) {
-          ensureCommandsIsMutable();
-          super.addAll(values, commands_);
-          onChanged();
-        } else {
-          commandsBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      public Builder clearCommands() {
-        if (commandsBuilder_ == null) {
-          commands_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000002);
-          onChanged();
-        } else {
-          commandsBuilder_.clear();
-        }
-        return this;
-      }
-      public Builder removeCommands(int index) {
-        if (commandsBuilder_ == null) {
-          ensureCommandsIsMutable();
-          commands_.remove(index);
-          onChanged();
-        } else {
-          commandsBuilder_.remove(index);
-        }
-        return this;
-      }
-      public JOutPiqi.gl_command.Builder getCommandsBuilder(
-          int index) {
-        return getCommandsFieldBuilder().getBuilder(index);
-      }
-      public JOutPiqi.gl_commandOrBuilder getCommandsOrBuilder(
-          int index) {
-        if (commandsBuilder_ == null) {
-          return commands_.get(index);  } else {
-          return commandsBuilder_.getMessageOrBuilder(index);
+          return startTimer_;
         }
       }
-      public java.util.List<? extends JOutPiqi.gl_commandOrBuilder> 
-           getCommandsOrBuilderList() {
-        if (commandsBuilder_ != null) {
-          return commandsBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(commands_);
-        }
-      }
-      public JOutPiqi.gl_command.Builder addCommandsBuilder() {
-        return getCommandsFieldBuilder().addBuilder(
-            JOutPiqi.gl_command.getDefaultInstance());
-      }
-      public JOutPiqi.gl_command.Builder addCommandsBuilder(
-          int index) {
-        return getCommandsFieldBuilder().addBuilder(
-            index, JOutPiqi.gl_command.getDefaultInstance());
-      }
-      public java.util.List<JOutPiqi.gl_command.Builder> 
-           getCommandsBuilderList() {
-        return getCommandsFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          JOutPiqi.gl_command, JOutPiqi.gl_command.Builder, JOutPiqi.gl_commandOrBuilder> 
-          getCommandsFieldBuilder() {
-        if (commandsBuilder_ == null) {
-          commandsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              JOutPiqi.gl_command, JOutPiqi.gl_command.Builder, JOutPiqi.gl_commandOrBuilder>(
-                  commands_,
-                  ((bitField0_ & 0x00000002) == 0x00000002),
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.timer, JOutPiqi.timer.Builder, JOutPiqi.timerOrBuilder> 
+          getStartTimerFieldBuilder() {
+        if (startTimerBuilder_ == null) {
+          startTimerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JOutPiqi.timer, JOutPiqi.timer.Builder, JOutPiqi.timerOrBuilder>(
+                  startTimer_,
                   getParentForChildren(),
                   isClean());
-          commands_ = null;
+          startTimer_ = null;
         }
-        return commandsBuilder_;
+        return startTimerBuilder_;
       }
       
-      // repeated .gl_message messages = 3;
-      private java.util.List<JOutPiqi.gl_message> messages_ =
+      // optional .userid_list kick_player = 3;
+      private JOutPiqi.userid_list kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.userid_list, JOutPiqi.userid_list.Builder, JOutPiqi.userid_listOrBuilder> kickPlayerBuilder_;
+      public boolean hasKickPlayer() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public JOutPiqi.userid_list getKickPlayer() {
+        if (kickPlayerBuilder_ == null) {
+          return kickPlayer_;
+        } else {
+          return kickPlayerBuilder_.getMessage();
+        }
+      }
+      public Builder setKickPlayer(JOutPiqi.userid_list value) {
+        if (kickPlayerBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          kickPlayer_ = value;
+          onChanged();
+        } else {
+          kickPlayerBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder setKickPlayer(
+          JOutPiqi.userid_list.Builder builderForValue) {
+        if (kickPlayerBuilder_ == null) {
+          kickPlayer_ = builderForValue.build();
+          onChanged();
+        } else {
+          kickPlayerBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder mergeKickPlayer(JOutPiqi.userid_list value) {
+        if (kickPlayerBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004) &&
+              kickPlayer_ != JOutPiqi.userid_list.getDefaultInstance()) {
+            kickPlayer_ =
+              JOutPiqi.userid_list.newBuilder(kickPlayer_).mergeFrom(value).buildPartial();
+          } else {
+            kickPlayer_ = value;
+          }
+          onChanged();
+        } else {
+          kickPlayerBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000004;
+        return this;
+      }
+      public Builder clearKickPlayer() {
+        if (kickPlayerBuilder_ == null) {
+          kickPlayer_ = JOutPiqi.userid_list.getDefaultInstance();
+          onChanged();
+        } else {
+          kickPlayerBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      public JOutPiqi.userid_list.Builder getKickPlayerBuilder() {
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return getKickPlayerFieldBuilder().getBuilder();
+      }
+      public JOutPiqi.userid_listOrBuilder getKickPlayerOrBuilder() {
+        if (kickPlayerBuilder_ != null) {
+          return kickPlayerBuilder_.getMessageOrBuilder();
+        } else {
+          return kickPlayer_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.userid_list, JOutPiqi.userid_list.Builder, JOutPiqi.userid_listOrBuilder> 
+          getKickPlayerFieldBuilder() {
+        if (kickPlayerBuilder_ == null) {
+          kickPlayerBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JOutPiqi.userid_list, JOutPiqi.userid_list.Builder, JOutPiqi.userid_listOrBuilder>(
+                  kickPlayer_,
+                  getParentForChildren(),
+                  isClean());
+          kickPlayer_ = null;
+        }
+        return kickPlayerBuilder_;
+      }
+      
+      // optional .message message = 4;
+      private JOutPiqi.message message_ = JOutPiqi.message.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.message, JOutPiqi.message.Builder, JOutPiqi.messageOrBuilder> messageBuilder_;
+      public boolean hasMessage() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public JOutPiqi.message getMessage() {
+        if (messageBuilder_ == null) {
+          return message_;
+        } else {
+          return messageBuilder_.getMessage();
+        }
+      }
+      public Builder setMessage(JOutPiqi.message value) {
+        if (messageBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          message_ = value;
+          onChanged();
+        } else {
+          messageBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder setMessage(
+          JOutPiqi.message.Builder builderForValue) {
+        if (messageBuilder_ == null) {
+          message_ = builderForValue.build();
+          onChanged();
+        } else {
+          messageBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder mergeMessage(JOutPiqi.message value) {
+        if (messageBuilder_ == null) {
+          if (((bitField0_ & 0x00000008) == 0x00000008) &&
+              message_ != JOutPiqi.message.getDefaultInstance()) {
+            message_ =
+              JOutPiqi.message.newBuilder(message_).mergeFrom(value).buildPartial();
+          } else {
+            message_ = value;
+          }
+          onChanged();
+        } else {
+          messageBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000008;
+        return this;
+      }
+      public Builder clearMessage() {
+        if (messageBuilder_ == null) {
+          message_ = JOutPiqi.message.getDefaultInstance();
+          onChanged();
+        } else {
+          messageBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+      public JOutPiqi.message.Builder getMessageBuilder() {
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return getMessageFieldBuilder().getBuilder();
+      }
+      public JOutPiqi.messageOrBuilder getMessageOrBuilder() {
+        if (messageBuilder_ != null) {
+          return messageBuilder_.getMessageOrBuilder();
+        } else {
+          return message_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.message, JOutPiqi.message.Builder, JOutPiqi.messageOrBuilder> 
+          getMessageFieldBuilder() {
+        if (messageBuilder_ == null) {
+          messageBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JOutPiqi.message, JOutPiqi.message.Builder, JOutPiqi.messageOrBuilder>(
+                  message_,
+                  getParentForChildren(),
+                  isClean());
+          message_ = null;
+        }
+        return messageBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:action)
+    }
+    
+    static {
+      defaultInstance = new action(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:action)
+  }
+  
+  public interface callback_responseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required .result result = 1;
+    boolean hasResult();
+    JOutPiqi.result getResult();
+    JOutPiqi.resultOrBuilder getResultOrBuilder();
+    
+    // required bytes state = 2;
+    boolean hasState();
+    com.google.protobuf.ByteString getState();
+    
+    // repeated .action actions = 3;
+    java.util.List<JOutPiqi.action> 
+        getActionsList();
+    JOutPiqi.action getActions(int index);
+    int getActionsCount();
+    java.util.List<? extends JOutPiqi.actionOrBuilder> 
+        getActionsOrBuilderList();
+    JOutPiqi.actionOrBuilder getActionsOrBuilder(
+        int index);
+  }
+  public static final class callback_response extends
+      com.google.protobuf.GeneratedMessage
+      implements callback_responseOrBuilder {
+    // Use callback_response.newBuilder() to construct.
+    private callback_response(Builder builder) {
+      super(builder);
+    }
+    private callback_response(boolean noInit) {}
+    
+    private static final callback_response defaultInstance;
+    public static callback_response getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public callback_response getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return JOutPiqi.internal_static_callback_response_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return JOutPiqi.internal_static_callback_response_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required .result result = 1;
+    public static final int RESULT_FIELD_NUMBER = 1;
+    private JOutPiqi.result result_;
+    public boolean hasResult() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public JOutPiqi.result getResult() {
+      return result_;
+    }
+    public JOutPiqi.resultOrBuilder getResultOrBuilder() {
+      return result_;
+    }
+    
+    // required bytes state = 2;
+    public static final int STATE_FIELD_NUMBER = 2;
+    private com.google.protobuf.ByteString state_;
+    public boolean hasState() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public com.google.protobuf.ByteString getState() {
+      return state_;
+    }
+    
+    // repeated .action actions = 3;
+    public static final int ACTIONS_FIELD_NUMBER = 3;
+    private java.util.List<JOutPiqi.action> actions_;
+    public java.util.List<JOutPiqi.action> getActionsList() {
+      return actions_;
+    }
+    public java.util.List<? extends JOutPiqi.actionOrBuilder> 
+        getActionsOrBuilderList() {
+      return actions_;
+    }
+    public int getActionsCount() {
+      return actions_.size();
+    }
+    public JOutPiqi.action getActions(int index) {
+      return actions_.get(index);
+    }
+    public JOutPiqi.actionOrBuilder getActionsOrBuilder(
+        int index) {
+      return actions_.get(index);
+    }
+    
+    private void initFields() {
+      result_ = JOutPiqi.result.getDefaultInstance();
+      state_ = com.google.protobuf.ByteString.EMPTY;
+      actions_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasResult()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasState()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      for (int i = 0; i < getActionsCount(); i++) {
+        if (!getActions(i).isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, result_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, state_);
+      }
+      for (int i = 0; i < actions_.size(); i++) {
+        output.writeMessage(3, actions_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, result_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, state_);
+      }
+      for (int i = 0; i < actions_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, actions_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static JOutPiqi.callback_response parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static JOutPiqi.callback_response parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.callback_response parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static JOutPiqi.callback_response parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.callback_response parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static JOutPiqi.callback_response parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.callback_response parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static JOutPiqi.callback_response parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static JOutPiqi.callback_response parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static JOutPiqi.callback_response parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(JOutPiqi.callback_response prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements JOutPiqi.callback_responseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return JOutPiqi.internal_static_callback_response_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return JOutPiqi.internal_static_callback_response_fieldAccessorTable;
+      }
+      
+      // Construct using JOutPiqi.callback_response.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getResultFieldBuilder();
+          getActionsFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (resultBuilder_ == null) {
+          result_ = JOutPiqi.result.getDefaultInstance();
+        } else {
+          resultBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        state_ = com.google.protobuf.ByteString.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        if (actionsBuilder_ == null) {
+          actions_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        } else {
+          actionsBuilder_.clear();
+        }
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return JOutPiqi.callback_response.getDescriptor();
+      }
+      
+      public JOutPiqi.callback_response getDefaultInstanceForType() {
+        return JOutPiqi.callback_response.getDefaultInstance();
+      }
+      
+      public JOutPiqi.callback_response build() {
+        JOutPiqi.callback_response result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private JOutPiqi.callback_response buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        JOutPiqi.callback_response result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public JOutPiqi.callback_response buildPartial() {
+        JOutPiqi.callback_response result = new JOutPiqi.callback_response(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (resultBuilder_ == null) {
+          result.result_ = result_;
+        } else {
+          result.result_ = resultBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.state_ = state_;
+        if (actionsBuilder_ == null) {
+          if (((bitField0_ & 0x00000004) == 0x00000004)) {
+            actions_ = java.util.Collections.unmodifiableList(actions_);
+            bitField0_ = (bitField0_ & ~0x00000004);
+          }
+          result.actions_ = actions_;
+        } else {
+          result.actions_ = actionsBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof JOutPiqi.callback_response) {
+          return mergeFrom((JOutPiqi.callback_response)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(JOutPiqi.callback_response other) {
+        if (other == JOutPiqi.callback_response.getDefaultInstance()) return this;
+        if (other.hasResult()) {
+          mergeResult(other.getResult());
+        }
+        if (other.hasState()) {
+          setState(other.getState());
+        }
+        if (actionsBuilder_ == null) {
+          if (!other.actions_.isEmpty()) {
+            if (actions_.isEmpty()) {
+              actions_ = other.actions_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+            } else {
+              ensureActionsIsMutable();
+              actions_.addAll(other.actions_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.actions_.isEmpty()) {
+            if (actionsBuilder_.isEmpty()) {
+              actionsBuilder_.dispose();
+              actionsBuilder_ = null;
+              actions_ = other.actions_;
+              bitField0_ = (bitField0_ & ~0x00000004);
+              actionsBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getActionsFieldBuilder() : null;
+            } else {
+              actionsBuilder_.addAllMessages(other.actions_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasResult()) {
+          
+          return false;
+        }
+        if (!hasState()) {
+          
+          return false;
+        }
+        for (int i = 0; i < getActionsCount(); i++) {
+          if (!getActions(i).isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              JOutPiqi.result.Builder subBuilder = JOutPiqi.result.newBuilder();
+              if (hasResult()) {
+                subBuilder.mergeFrom(getResult());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setResult(subBuilder.buildPartial());
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              state_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              JOutPiqi.action.Builder subBuilder = JOutPiqi.action.newBuilder();
+              input.readMessage(subBuilder, extensionRegistry);
+              addActions(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required .result result = 1;
+      private JOutPiqi.result result_ = JOutPiqi.result.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.result, JOutPiqi.result.Builder, JOutPiqi.resultOrBuilder> resultBuilder_;
+      public boolean hasResult() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public JOutPiqi.result getResult() {
+        if (resultBuilder_ == null) {
+          return result_;
+        } else {
+          return resultBuilder_.getMessage();
+        }
+      }
+      public Builder setResult(JOutPiqi.result value) {
+        if (resultBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          result_ = value;
+          onChanged();
+        } else {
+          resultBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder setResult(
+          JOutPiqi.result.Builder builderForValue) {
+        if (resultBuilder_ == null) {
+          result_ = builderForValue.build();
+          onChanged();
+        } else {
+          resultBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder mergeResult(JOutPiqi.result value) {
+        if (resultBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              result_ != JOutPiqi.result.getDefaultInstance()) {
+            result_ =
+              JOutPiqi.result.newBuilder(result_).mergeFrom(value).buildPartial();
+          } else {
+            result_ = value;
+          }
+          onChanged();
+        } else {
+          resultBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder clearResult() {
+        if (resultBuilder_ == null) {
+          result_ = JOutPiqi.result.getDefaultInstance();
+          onChanged();
+        } else {
+          resultBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      public JOutPiqi.result.Builder getResultBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getResultFieldBuilder().getBuilder();
+      }
+      public JOutPiqi.resultOrBuilder getResultOrBuilder() {
+        if (resultBuilder_ != null) {
+          return resultBuilder_.getMessageOrBuilder();
+        } else {
+          return result_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.result, JOutPiqi.result.Builder, JOutPiqi.resultOrBuilder> 
+          getResultFieldBuilder() {
+        if (resultBuilder_ == null) {
+          resultBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JOutPiqi.result, JOutPiqi.result.Builder, JOutPiqi.resultOrBuilder>(
+                  result_,
+                  getParentForChildren(),
+                  isClean());
+          result_ = null;
+        }
+        return resultBuilder_;
+      }
+      
+      // required bytes state = 2;
+      private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
+      public boolean hasState() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public com.google.protobuf.ByteString getState() {
+        return state_;
+      }
+      public Builder setState(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        state_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearState() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        state_ = getDefaultInstance().getState();
+        onChanged();
+        return this;
+      }
+      
+      // repeated .action actions = 3;
+      private java.util.List<JOutPiqi.action> actions_ =
         java.util.Collections.emptyList();
-      private void ensureMessagesIsMutable() {
+      private void ensureActionsIsMutable() {
         if (!((bitField0_ & 0x00000004) == 0x00000004)) {
-          messages_ = new java.util.ArrayList<JOutPiqi.gl_message>(messages_);
+          actions_ = new java.util.ArrayList<JOutPiqi.action>(actions_);
           bitField0_ |= 0x00000004;
          }
       }
       
       private com.google.protobuf.RepeatedFieldBuilder<
-          JOutPiqi.gl_message, JOutPiqi.gl_message.Builder, JOutPiqi.gl_messageOrBuilder> messagesBuilder_;
+          JOutPiqi.action, JOutPiqi.action.Builder, JOutPiqi.actionOrBuilder> actionsBuilder_;
       
-      public java.util.List<JOutPiqi.gl_message> getMessagesList() {
-        if (messagesBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(messages_);
+      public java.util.List<JOutPiqi.action> getActionsList() {
+        if (actionsBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(actions_);
         } else {
-          return messagesBuilder_.getMessageList();
+          return actionsBuilder_.getMessageList();
         }
       }
-      public int getMessagesCount() {
-        if (messagesBuilder_ == null) {
-          return messages_.size();
+      public int getActionsCount() {
+        if (actionsBuilder_ == null) {
+          return actions_.size();
         } else {
-          return messagesBuilder_.getCount();
+          return actionsBuilder_.getCount();
         }
       }
-      public JOutPiqi.gl_message getMessages(int index) {
-        if (messagesBuilder_ == null) {
-          return messages_.get(index);
+      public JOutPiqi.action getActions(int index) {
+        if (actionsBuilder_ == null) {
+          return actions_.get(index);
         } else {
-          return messagesBuilder_.getMessage(index);
+          return actionsBuilder_.getMessage(index);
         }
       }
-      public Builder setMessages(
-          int index, JOutPiqi.gl_message value) {
-        if (messagesBuilder_ == null) {
+      public Builder setActions(
+          int index, JOutPiqi.action value) {
+        if (actionsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMessagesIsMutable();
-          messages_.set(index, value);
+          ensureActionsIsMutable();
+          actions_.set(index, value);
           onChanged();
         } else {
-          messagesBuilder_.setMessage(index, value);
+          actionsBuilder_.setMessage(index, value);
         }
         return this;
       }
-      public Builder setMessages(
-          int index, JOutPiqi.gl_message.Builder builderForValue) {
-        if (messagesBuilder_ == null) {
-          ensureMessagesIsMutable();
-          messages_.set(index, builderForValue.build());
+      public Builder setActions(
+          int index, JOutPiqi.action.Builder builderForValue) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          actions_.set(index, builderForValue.build());
           onChanged();
         } else {
-          messagesBuilder_.setMessage(index, builderForValue.build());
+          actionsBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
-      public Builder addMessages(JOutPiqi.gl_message value) {
-        if (messagesBuilder_ == null) {
+      public Builder addActions(JOutPiqi.action value) {
+        if (actionsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMessagesIsMutable();
-          messages_.add(value);
+          ensureActionsIsMutable();
+          actions_.add(value);
           onChanged();
         } else {
-          messagesBuilder_.addMessage(value);
+          actionsBuilder_.addMessage(value);
         }
         return this;
       }
-      public Builder addMessages(
-          int index, JOutPiqi.gl_message value) {
-        if (messagesBuilder_ == null) {
+      public Builder addActions(
+          int index, JOutPiqi.action value) {
+        if (actionsBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureMessagesIsMutable();
-          messages_.add(index, value);
+          ensureActionsIsMutable();
+          actions_.add(index, value);
           onChanged();
         } else {
-          messagesBuilder_.addMessage(index, value);
+          actionsBuilder_.addMessage(index, value);
         }
         return this;
       }
-      public Builder addMessages(
-          JOutPiqi.gl_message.Builder builderForValue) {
-        if (messagesBuilder_ == null) {
-          ensureMessagesIsMutable();
-          messages_.add(builderForValue.build());
+      public Builder addActions(
+          JOutPiqi.action.Builder builderForValue) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          actions_.add(builderForValue.build());
           onChanged();
         } else {
-          messagesBuilder_.addMessage(builderForValue.build());
+          actionsBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
-      public Builder addMessages(
-          int index, JOutPiqi.gl_message.Builder builderForValue) {
-        if (messagesBuilder_ == null) {
-          ensureMessagesIsMutable();
-          messages_.add(index, builderForValue.build());
+      public Builder addActions(
+          int index, JOutPiqi.action.Builder builderForValue) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          actions_.add(index, builderForValue.build());
           onChanged();
         } else {
-          messagesBuilder_.addMessage(index, builderForValue.build());
+          actionsBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
-      public Builder addAllMessages(
-          java.lang.Iterable<? extends JOutPiqi.gl_message> values) {
-        if (messagesBuilder_ == null) {
-          ensureMessagesIsMutable();
-          super.addAll(values, messages_);
+      public Builder addAllActions(
+          java.lang.Iterable<? extends JOutPiqi.action> values) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          super.addAll(values, actions_);
           onChanged();
         } else {
-          messagesBuilder_.addAllMessages(values);
+          actionsBuilder_.addAllMessages(values);
         }
         return this;
       }
-      public Builder clearMessages() {
-        if (messagesBuilder_ == null) {
-          messages_ = java.util.Collections.emptyList();
+      public Builder clearActions() {
+        if (actionsBuilder_ == null) {
+          actions_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000004);
           onChanged();
         } else {
-          messagesBuilder_.clear();
+          actionsBuilder_.clear();
         }
         return this;
       }
-      public Builder removeMessages(int index) {
-        if (messagesBuilder_ == null) {
-          ensureMessagesIsMutable();
-          messages_.remove(index);
+      public Builder removeActions(int index) {
+        if (actionsBuilder_ == null) {
+          ensureActionsIsMutable();
+          actions_.remove(index);
           onChanged();
         } else {
-          messagesBuilder_.remove(index);
+          actionsBuilder_.remove(index);
         }
         return this;
       }
-      public JOutPiqi.gl_message.Builder getMessagesBuilder(
+      public JOutPiqi.action.Builder getActionsBuilder(
           int index) {
-        return getMessagesFieldBuilder().getBuilder(index);
+        return getActionsFieldBuilder().getBuilder(index);
       }
-      public JOutPiqi.gl_messageOrBuilder getMessagesOrBuilder(
+      public JOutPiqi.actionOrBuilder getActionsOrBuilder(
           int index) {
-        if (messagesBuilder_ == null) {
-          return messages_.get(index);  } else {
-          return messagesBuilder_.getMessageOrBuilder(index);
+        if (actionsBuilder_ == null) {
+          return actions_.get(index);  } else {
+          return actionsBuilder_.getMessageOrBuilder(index);
         }
       }
-      public java.util.List<? extends JOutPiqi.gl_messageOrBuilder> 
-           getMessagesOrBuilderList() {
-        if (messagesBuilder_ != null) {
-          return messagesBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends JOutPiqi.actionOrBuilder> 
+           getActionsOrBuilderList() {
+        if (actionsBuilder_ != null) {
+          return actionsBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(messages_);
+          return java.util.Collections.unmodifiableList(actions_);
         }
       }
-      public JOutPiqi.gl_message.Builder addMessagesBuilder() {
-        return getMessagesFieldBuilder().addBuilder(
-            JOutPiqi.gl_message.getDefaultInstance());
+      public JOutPiqi.action.Builder addActionsBuilder() {
+        return getActionsFieldBuilder().addBuilder(
+            JOutPiqi.action.getDefaultInstance());
       }
-      public JOutPiqi.gl_message.Builder addMessagesBuilder(
+      public JOutPiqi.action.Builder addActionsBuilder(
           int index) {
-        return getMessagesFieldBuilder().addBuilder(
-            index, JOutPiqi.gl_message.getDefaultInstance());
+        return getActionsFieldBuilder().addBuilder(
+            index, JOutPiqi.action.getDefaultInstance());
       }
-      public java.util.List<JOutPiqi.gl_message.Builder> 
-           getMessagesBuilderList() {
-        return getMessagesFieldBuilder().getBuilderList();
+      public java.util.List<JOutPiqi.action.Builder> 
+           getActionsBuilderList() {
+        return getActionsFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilder<
-          JOutPiqi.gl_message, JOutPiqi.gl_message.Builder, JOutPiqi.gl_messageOrBuilder> 
-          getMessagesFieldBuilder() {
-        if (messagesBuilder_ == null) {
-          messagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              JOutPiqi.gl_message, JOutPiqi.gl_message.Builder, JOutPiqi.gl_messageOrBuilder>(
-                  messages_,
+          JOutPiqi.action, JOutPiqi.action.Builder, JOutPiqi.actionOrBuilder> 
+          getActionsFieldBuilder() {
+        if (actionsBuilder_ == null) {
+          actionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              JOutPiqi.action, JOutPiqi.action.Builder, JOutPiqi.actionOrBuilder>(
+                  actions_,
                   ((bitField0_ & 0x00000004) == 0x00000004),
                   getParentForChildren(),
                   isClean());
-          messages_ = null;
+          actions_ = null;
         }
-        return messagesBuilder_;
+        return actionsBuilder_;
       }
       
-      // repeated .gl_timer timers = 4;
-      private java.util.List<JOutPiqi.gl_timer> timers_ =
-        java.util.Collections.emptyList();
-      private void ensureTimersIsMutable() {
-        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
-          timers_ = new java.util.ArrayList<JOutPiqi.gl_timer>(timers_);
-          bitField0_ |= 0x00000008;
-         }
-      }
-      
-      private com.google.protobuf.RepeatedFieldBuilder<
-          JOutPiqi.gl_timer, JOutPiqi.gl_timer.Builder, JOutPiqi.gl_timerOrBuilder> timersBuilder_;
-      
-      public java.util.List<JOutPiqi.gl_timer> getTimersList() {
-        if (timersBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(timers_);
-        } else {
-          return timersBuilder_.getMessageList();
-        }
-      }
-      public int getTimersCount() {
-        if (timersBuilder_ == null) {
-          return timers_.size();
-        } else {
-          return timersBuilder_.getCount();
-        }
-      }
-      public JOutPiqi.gl_timer getTimers(int index) {
-        if (timersBuilder_ == null) {
-          return timers_.get(index);
-        } else {
-          return timersBuilder_.getMessage(index);
-        }
-      }
-      public Builder setTimers(
-          int index, JOutPiqi.gl_timer value) {
-        if (timersBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTimersIsMutable();
-          timers_.set(index, value);
-          onChanged();
-        } else {
-          timersBuilder_.setMessage(index, value);
-        }
-        return this;
-      }
-      public Builder setTimers(
-          int index, JOutPiqi.gl_timer.Builder builderForValue) {
-        if (timersBuilder_ == null) {
-          ensureTimersIsMutable();
-          timers_.set(index, builderForValue.build());
-          onChanged();
-        } else {
-          timersBuilder_.setMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addTimers(JOutPiqi.gl_timer value) {
-        if (timersBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTimersIsMutable();
-          timers_.add(value);
-          onChanged();
-        } else {
-          timersBuilder_.addMessage(value);
-        }
-        return this;
-      }
-      public Builder addTimers(
-          int index, JOutPiqi.gl_timer value) {
-        if (timersBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          ensureTimersIsMutable();
-          timers_.add(index, value);
-          onChanged();
-        } else {
-          timersBuilder_.addMessage(index, value);
-        }
-        return this;
-      }
-      public Builder addTimers(
-          JOutPiqi.gl_timer.Builder builderForValue) {
-        if (timersBuilder_ == null) {
-          ensureTimersIsMutable();
-          timers_.add(builderForValue.build());
-          onChanged();
-        } else {
-          timersBuilder_.addMessage(builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addTimers(
-          int index, JOutPiqi.gl_timer.Builder builderForValue) {
-        if (timersBuilder_ == null) {
-          ensureTimersIsMutable();
-          timers_.add(index, builderForValue.build());
-          onChanged();
-        } else {
-          timersBuilder_.addMessage(index, builderForValue.build());
-        }
-        return this;
-      }
-      public Builder addAllTimers(
-          java.lang.Iterable<? extends JOutPiqi.gl_timer> values) {
-        if (timersBuilder_ == null) {
-          ensureTimersIsMutable();
-          super.addAll(values, timers_);
-          onChanged();
-        } else {
-          timersBuilder_.addAllMessages(values);
-        }
-        return this;
-      }
-      public Builder clearTimers() {
-        if (timersBuilder_ == null) {
-          timers_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000008);
-          onChanged();
-        } else {
-          timersBuilder_.clear();
-        }
-        return this;
-      }
-      public Builder removeTimers(int index) {
-        if (timersBuilder_ == null) {
-          ensureTimersIsMutable();
-          timers_.remove(index);
-          onChanged();
-        } else {
-          timersBuilder_.remove(index);
-        }
-        return this;
-      }
-      public JOutPiqi.gl_timer.Builder getTimersBuilder(
-          int index) {
-        return getTimersFieldBuilder().getBuilder(index);
-      }
-      public JOutPiqi.gl_timerOrBuilder getTimersOrBuilder(
-          int index) {
-        if (timersBuilder_ == null) {
-          return timers_.get(index);  } else {
-          return timersBuilder_.getMessageOrBuilder(index);
-        }
-      }
-      public java.util.List<? extends JOutPiqi.gl_timerOrBuilder> 
-           getTimersOrBuilderList() {
-        if (timersBuilder_ != null) {
-          return timersBuilder_.getMessageOrBuilderList();
-        } else {
-          return java.util.Collections.unmodifiableList(timers_);
-        }
-      }
-      public JOutPiqi.gl_timer.Builder addTimersBuilder() {
-        return getTimersFieldBuilder().addBuilder(
-            JOutPiqi.gl_timer.getDefaultInstance());
-      }
-      public JOutPiqi.gl_timer.Builder addTimersBuilder(
-          int index) {
-        return getTimersFieldBuilder().addBuilder(
-            index, JOutPiqi.gl_timer.getDefaultInstance());
-      }
-      public java.util.List<JOutPiqi.gl_timer.Builder> 
-           getTimersBuilderList() {
-        return getTimersFieldBuilder().getBuilderList();
-      }
-      private com.google.protobuf.RepeatedFieldBuilder<
-          JOutPiqi.gl_timer, JOutPiqi.gl_timer.Builder, JOutPiqi.gl_timerOrBuilder> 
-          getTimersFieldBuilder() {
-        if (timersBuilder_ == null) {
-          timersBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
-              JOutPiqi.gl_timer, JOutPiqi.gl_timer.Builder, JOutPiqi.gl_timerOrBuilder>(
-                  timers_,
-                  ((bitField0_ & 0x00000008) == 0x00000008),
-                  getParentForChildren(),
-                  isClean());
-          timers_ = null;
-        }
-        return timersBuilder_;
-      }
-      
-      // @@protoc_insertion_point(builder_scope:callback_return)
+      // @@protoc_insertion_point(builder_scope:callback_response)
     }
     
     static {
-      defaultInstance = new callback_return(true);
+      defaultInstance = new callback_response(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:callback_return)
+    // @@protoc_insertion_point(class_scope:callback_response)
+  }
+  
+  public interface responseOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // optional .callback_response response = 1;
+    boolean hasResponse();
+    JOutPiqi.callback_response getResponse();
+    JOutPiqi.callback_responseOrBuilder getResponseOrBuilder();
+    
+    // optional .system_request system = 2;
+    boolean hasSystem();
+    JSystemPiqi.system_request getSystem();
+    JSystemPiqi.system_requestOrBuilder getSystemOrBuilder();
+  }
+  public static final class response extends
+      com.google.protobuf.GeneratedMessage
+      implements responseOrBuilder {
+    // Use response.newBuilder() to construct.
+    private response(Builder builder) {
+      super(builder);
+    }
+    private response(boolean noInit) {}
+    
+    private static final response defaultInstance;
+    public static response getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public response getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return JOutPiqi.internal_static_response_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return JOutPiqi.internal_static_response_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // optional .callback_response response = 1;
+    public static final int RESPONSE_FIELD_NUMBER = 1;
+    private JOutPiqi.callback_response response_;
+    public boolean hasResponse() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public JOutPiqi.callback_response getResponse() {
+      return response_;
+    }
+    public JOutPiqi.callback_responseOrBuilder getResponseOrBuilder() {
+      return response_;
+    }
+    
+    // optional .system_request system = 2;
+    public static final int SYSTEM_FIELD_NUMBER = 2;
+    private JSystemPiqi.system_request system_;
+    public boolean hasSystem() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public JSystemPiqi.system_request getSystem() {
+      return system_;
+    }
+    public JSystemPiqi.system_requestOrBuilder getSystemOrBuilder() {
+      return system_;
+    }
+    
+    private void initFields() {
+      response_ = JOutPiqi.callback_response.getDefaultInstance();
+      system_ = JSystemPiqi.system_request.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (hasResponse()) {
+        if (!getResponse().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSystem()) {
+        if (!getSystem().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(1, response_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeMessage(2, system_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, response_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, system_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static JOutPiqi.response parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static JOutPiqi.response parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.response parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static JOutPiqi.response parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.response parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static JOutPiqi.response parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static JOutPiqi.response parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static JOutPiqi.response parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static JOutPiqi.response parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static JOutPiqi.response parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(JOutPiqi.response prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements JOutPiqi.responseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return JOutPiqi.internal_static_response_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return JOutPiqi.internal_static_response_fieldAccessorTable;
+      }
+      
+      // Construct using JOutPiqi.response.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getResponseFieldBuilder();
+          getSystemFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        if (responseBuilder_ == null) {
+          response_ = JOutPiqi.callback_response.getDefaultInstance();
+        } else {
+          responseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        if (systemBuilder_ == null) {
+          system_ = JSystemPiqi.system_request.getDefaultInstance();
+        } else {
+          systemBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return JOutPiqi.response.getDescriptor();
+      }
+      
+      public JOutPiqi.response getDefaultInstanceForType() {
+        return JOutPiqi.response.getDefaultInstance();
+      }
+      
+      public JOutPiqi.response build() {
+        JOutPiqi.response result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private JOutPiqi.response buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        JOutPiqi.response result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public JOutPiqi.response buildPartial() {
+        JOutPiqi.response result = new JOutPiqi.response(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (responseBuilder_ == null) {
+          result.response_ = response_;
+        } else {
+          result.response_ = responseBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        if (systemBuilder_ == null) {
+          result.system_ = system_;
+        } else {
+          result.system_ = systemBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof JOutPiqi.response) {
+          return mergeFrom((JOutPiqi.response)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(JOutPiqi.response other) {
+        if (other == JOutPiqi.response.getDefaultInstance()) return this;
+        if (other.hasResponse()) {
+          mergeResponse(other.getResponse());
+        }
+        if (other.hasSystem()) {
+          mergeSystem(other.getSystem());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (hasResponse()) {
+          if (!getResponse().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasSystem()) {
+          if (!getSystem().isInitialized()) {
+            
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              JOutPiqi.callback_response.Builder subBuilder = JOutPiqi.callback_response.newBuilder();
+              if (hasResponse()) {
+                subBuilder.mergeFrom(getResponse());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setResponse(subBuilder.buildPartial());
+              break;
+            }
+            case 18: {
+              JSystemPiqi.system_request.Builder subBuilder = JSystemPiqi.system_request.newBuilder();
+              if (hasSystem()) {
+                subBuilder.mergeFrom(getSystem());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setSystem(subBuilder.buildPartial());
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // optional .callback_response response = 1;
+      private JOutPiqi.callback_response response_ = JOutPiqi.callback_response.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.callback_response, JOutPiqi.callback_response.Builder, JOutPiqi.callback_responseOrBuilder> responseBuilder_;
+      public boolean hasResponse() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public JOutPiqi.callback_response getResponse() {
+        if (responseBuilder_ == null) {
+          return response_;
+        } else {
+          return responseBuilder_.getMessage();
+        }
+      }
+      public Builder setResponse(JOutPiqi.callback_response value) {
+        if (responseBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          response_ = value;
+          onChanged();
+        } else {
+          responseBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder setResponse(
+          JOutPiqi.callback_response.Builder builderForValue) {
+        if (responseBuilder_ == null) {
+          response_ = builderForValue.build();
+          onChanged();
+        } else {
+          responseBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder mergeResponse(JOutPiqi.callback_response value) {
+        if (responseBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              response_ != JOutPiqi.callback_response.getDefaultInstance()) {
+            response_ =
+              JOutPiqi.callback_response.newBuilder(response_).mergeFrom(value).buildPartial();
+          } else {
+            response_ = value;
+          }
+          onChanged();
+        } else {
+          responseBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      public Builder clearResponse() {
+        if (responseBuilder_ == null) {
+          response_ = JOutPiqi.callback_response.getDefaultInstance();
+          onChanged();
+        } else {
+          responseBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      public JOutPiqi.callback_response.Builder getResponseBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getResponseFieldBuilder().getBuilder();
+      }
+      public JOutPiqi.callback_responseOrBuilder getResponseOrBuilder() {
+        if (responseBuilder_ != null) {
+          return responseBuilder_.getMessageOrBuilder();
+        } else {
+          return response_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          JOutPiqi.callback_response, JOutPiqi.callback_response.Builder, JOutPiqi.callback_responseOrBuilder> 
+          getResponseFieldBuilder() {
+        if (responseBuilder_ == null) {
+          responseBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JOutPiqi.callback_response, JOutPiqi.callback_response.Builder, JOutPiqi.callback_responseOrBuilder>(
+                  response_,
+                  getParentForChildren(),
+                  isClean());
+          response_ = null;
+        }
+        return responseBuilder_;
+      }
+      
+      // optional .system_request system = 2;
+      private JSystemPiqi.system_request system_ = JSystemPiqi.system_request.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JSystemPiqi.system_request, JSystemPiqi.system_request.Builder, JSystemPiqi.system_requestOrBuilder> systemBuilder_;
+      public boolean hasSystem() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public JSystemPiqi.system_request getSystem() {
+        if (systemBuilder_ == null) {
+          return system_;
+        } else {
+          return systemBuilder_.getMessage();
+        }
+      }
+      public Builder setSystem(JSystemPiqi.system_request value) {
+        if (systemBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          system_ = value;
+          onChanged();
+        } else {
+          systemBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder setSystem(
+          JSystemPiqi.system_request.Builder builderForValue) {
+        if (systemBuilder_ == null) {
+          system_ = builderForValue.build();
+          onChanged();
+        } else {
+          systemBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder mergeSystem(JSystemPiqi.system_request value) {
+        if (systemBuilder_ == null) {
+          if (((bitField0_ & 0x00000002) == 0x00000002) &&
+              system_ != JSystemPiqi.system_request.getDefaultInstance()) {
+            system_ =
+              JSystemPiqi.system_request.newBuilder(system_).mergeFrom(value).buildPartial();
+          } else {
+            system_ = value;
+          }
+          onChanged();
+        } else {
+          systemBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000002;
+        return this;
+      }
+      public Builder clearSystem() {
+        if (systemBuilder_ == null) {
+          system_ = JSystemPiqi.system_request.getDefaultInstance();
+          onChanged();
+        } else {
+          systemBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+      public JSystemPiqi.system_request.Builder getSystemBuilder() {
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return getSystemFieldBuilder().getBuilder();
+      }
+      public JSystemPiqi.system_requestOrBuilder getSystemOrBuilder() {
+        if (systemBuilder_ != null) {
+          return systemBuilder_.getMessageOrBuilder();
+        } else {
+          return system_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          JSystemPiqi.system_request, JSystemPiqi.system_request.Builder, JSystemPiqi.system_requestOrBuilder> 
+          getSystemFieldBuilder() {
+        if (systemBuilder_ == null) {
+          systemBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JSystemPiqi.system_request, JSystemPiqi.system_request.Builder, JSystemPiqi.system_requestOrBuilder>(
+                  system_,
+                  getParentForChildren(),
+                  isClean());
+          system_ = null;
+        }
+        return systemBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:response)
+    }
+    
+    static {
+      defaultInstance = new response(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:response)
   }
   
   private static com.google.protobuf.Descriptors.Descriptor
@@ -3790,30 +4633,40 @@ public final class JOutPiqi {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_userid_list_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_gl_recipient_descriptor;
+    internal_static_recipient_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_gl_recipient_fieldAccessorTable;
+      internal_static_recipient_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_gl_command_descriptor;
+    internal_static_result_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_gl_command_fieldAccessorTable;
+      internal_static_result_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_gl_message_descriptor;
+    internal_static_message_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_gl_message_fieldAccessorTable;
+      internal_static_message_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_gl_timer_descriptor;
+    internal_static_timer_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_gl_timer_fieldAccessorTable;
+      internal_static_timer_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_callback_return_descriptor;
+    internal_static_action_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_callback_return_fieldAccessorTable;
+      internal_static_action_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_callback_response_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_callback_response_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_response_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_response_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3823,19 +4676,22 @@ public final class JOutPiqi {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020j-out.piqi.proto\"\033\n\013userid_list\022\014\n\004ele" +
-      "m\030\001 \003(\t\"8\n\014gl_recipient\022\013\n\003all\030\001 \001(\010\022\033\n\005" +
-      "users\030\002 \001(\0132\014.userid_list\"_\n\ngl_command\022" +
-      "\014\n\004cont\030\001 \001(\010\022\014\n\004stop\030\002 \001(\010\022!\n\013kick_play" +
-      "er\030\003 \001(\0132\014.userid_list\022\022\n\nstop_timer\030\004 \001" +
-      "(\014\"Z\n\ngl_message\022 \n\trecipient\030\001 \002(\0132\r.gl" +
-      "_recipient\022\024\n\014command_name\030\002 \002(\t\022\024\n\014comm" +
-      "and_args\030\003 \003(\014\"Y\n\010gl_timer\022\030\n\020timer_iden" +
-      "tifier\030\001 \002(\014\022\026\n\016duration_in_ms\030\002 \002(\r\022\033\n\023" +
-      "tick_duration_in_ms\030\003 \002(\r\"}\n\017callback_re",
-      "turn\022\021\n\tnew_state\030\001 \002(\014\022\035\n\010commands\030\002 \003(" +
-      "\0132\013.gl_command\022\035\n\010messages\030\003 \003(\0132\013.gl_me" +
-      "ssage\022\031\n\006timers\030\004 \003(\0132\t.gl_timer"
+      "\n\020j-out.piqi.proto\032\023j-system.piqi.proto\"" +
+      "\033\n\013userid_list\022\014\n\004elem\030\001 \003(\t\"5\n\trecipien" +
+      "t\022\013\n\003all\030\001 \001(\010\022\033\n\005users\030\002 \001(\0132\014.userid_l" +
+      "ist\"\"\n\006result\022\n\n\002ok\030\001 \001(\010\022\014\n\004stop\030\002 \001(\010\"" +
+      "T\n\007message\022\035\n\trecipient\030\001 \002(\0132\n.recipien" +
+      "t\022\024\n\014command_name\030\002 \002(\t\022\024\n\014command_args\030" +
+      "\003 \003(\014\"H\n\005timer\022\n\n\002id\030\001 \002(\t\022\026\n\016duration_i" +
+      "n_ms\030\002 \002(\r\022\033\n\023tick_duration_in_ms\030\003 \002(\r\"" +
+      "w\n\006action\022\022\n\nstop_timer\030\001 \001(\t\022\033\n\013start_t" +
+      "imer\030\002 \001(\0132\006.timer\022!\n\013kick_player\030\003 \001(\0132",
+      "\014.userid_list\022\031\n\007message\030\004 \001(\0132\010.message" +
+      "\"U\n\021callback_response\022\027\n\006result\030\001 \002(\0132\007." +
+      "result\022\r\n\005state\030\002 \002(\014\022\030\n\007actions\030\003 \003(\0132\007" +
+      ".action\"Q\n\010response\022$\n\010response\030\001 \001(\0132\022." +
+      "callback_response\022\037\n\006system\030\002 \001(\0132\017.syst" +
+      "em_request"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -3850,52 +4706,69 @@ public final class JOutPiqi {
               new java.lang.String[] { "Elem", },
               JOutPiqi.userid_list.class,
               JOutPiqi.userid_list.Builder.class);
-          internal_static_gl_recipient_descriptor =
+          internal_static_recipient_descriptor =
             getDescriptor().getMessageTypes().get(1);
-          internal_static_gl_recipient_fieldAccessorTable = new
+          internal_static_recipient_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_gl_recipient_descriptor,
+              internal_static_recipient_descriptor,
               new java.lang.String[] { "All", "Users", },
-              JOutPiqi.gl_recipient.class,
-              JOutPiqi.gl_recipient.Builder.class);
-          internal_static_gl_command_descriptor =
+              JOutPiqi.recipient.class,
+              JOutPiqi.recipient.Builder.class);
+          internal_static_result_descriptor =
             getDescriptor().getMessageTypes().get(2);
-          internal_static_gl_command_fieldAccessorTable = new
+          internal_static_result_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_gl_command_descriptor,
-              new java.lang.String[] { "Cont", "Stop", "KickPlayer", "StopTimer", },
-              JOutPiqi.gl_command.class,
-              JOutPiqi.gl_command.Builder.class);
-          internal_static_gl_message_descriptor =
+              internal_static_result_descriptor,
+              new java.lang.String[] { "Ok", "Stop", },
+              JOutPiqi.result.class,
+              JOutPiqi.result.Builder.class);
+          internal_static_message_descriptor =
             getDescriptor().getMessageTypes().get(3);
-          internal_static_gl_message_fieldAccessorTable = new
+          internal_static_message_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_gl_message_descriptor,
+              internal_static_message_descriptor,
               new java.lang.String[] { "Recipient", "CommandName", "CommandArgs", },
-              JOutPiqi.gl_message.class,
-              JOutPiqi.gl_message.Builder.class);
-          internal_static_gl_timer_descriptor =
+              JOutPiqi.message.class,
+              JOutPiqi.message.Builder.class);
+          internal_static_timer_descriptor =
             getDescriptor().getMessageTypes().get(4);
-          internal_static_gl_timer_fieldAccessorTable = new
+          internal_static_timer_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_gl_timer_descriptor,
-              new java.lang.String[] { "TimerIdentifier", "DurationInMs", "TickDurationInMs", },
-              JOutPiqi.gl_timer.class,
-              JOutPiqi.gl_timer.Builder.class);
-          internal_static_callback_return_descriptor =
+              internal_static_timer_descriptor,
+              new java.lang.String[] { "Id", "DurationInMs", "TickDurationInMs", },
+              JOutPiqi.timer.class,
+              JOutPiqi.timer.Builder.class);
+          internal_static_action_descriptor =
             getDescriptor().getMessageTypes().get(5);
-          internal_static_callback_return_fieldAccessorTable = new
+          internal_static_action_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_callback_return_descriptor,
-              new java.lang.String[] { "NewState", "Commands", "Messages", "Timers", },
-              JOutPiqi.callback_return.class,
-              JOutPiqi.callback_return.Builder.class);
+              internal_static_action_descriptor,
+              new java.lang.String[] { "StopTimer", "StartTimer", "KickPlayer", "Message", },
+              JOutPiqi.action.class,
+              JOutPiqi.action.Builder.class);
+          internal_static_callback_response_descriptor =
+            getDescriptor().getMessageTypes().get(6);
+          internal_static_callback_response_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_callback_response_descriptor,
+              new java.lang.String[] { "Result", "State", "Actions", },
+              JOutPiqi.callback_response.class,
+              JOutPiqi.callback_response.Builder.class);
+          internal_static_response_descriptor =
+            getDescriptor().getMessageTypes().get(7);
+          internal_static_response_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_response_descriptor,
+              new java.lang.String[] { "Response", "System", },
+              JOutPiqi.response.class,
+              JOutPiqi.response.Builder.class);
           return null;
         }
       };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          JSystemPiqi.getDescriptor(),
         }, assigner);
   }
   

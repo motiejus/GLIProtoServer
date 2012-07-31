@@ -1958,9 +1958,9 @@ public final class JInPiqi {
   public interface handle_timerOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required bytes identifier = 1;
-    boolean hasIdentifier();
-    com.google.protobuf.ByteString getIdentifier();
+    // required string id = 1;
+    boolean hasId();
+    String getId();
     
     // required uint32 delta = 2;
     boolean hasDelta();
@@ -1999,14 +1999,36 @@ public final class JInPiqi {
     }
     
     private int bitField0_;
-    // required bytes identifier = 1;
-    public static final int IDENTIFIER_FIELD_NUMBER = 1;
-    private com.google.protobuf.ByteString identifier_;
-    public boolean hasIdentifier() {
+    // required string id = 1;
+    public static final int ID_FIELD_NUMBER = 1;
+    private java.lang.Object id_;
+    public boolean hasId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public com.google.protobuf.ByteString getIdentifier() {
-      return identifier_;
+    public String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          id_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
     
     // required uint32 delta = 2;
@@ -2030,7 +2052,7 @@ public final class JInPiqi {
     }
     
     private void initFields() {
-      identifier_ = com.google.protobuf.ByteString.EMPTY;
+      id_ = "";
       delta_ = 0;
       state_ = com.google.protobuf.ByteString.EMPTY;
     }
@@ -2039,7 +2061,7 @@ public final class JInPiqi {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasIdentifier()) {
+      if (!hasId()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -2059,7 +2081,7 @@ public final class JInPiqi {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, identifier_);
+        output.writeBytes(1, getIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         output.writeUInt32(2, delta_);
@@ -2078,7 +2100,7 @@ public final class JInPiqi {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, identifier_);
+          .computeBytesSize(1, getIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
@@ -2212,7 +2234,7 @@ public final class JInPiqi {
       
       public Builder clear() {
         super.clear();
-        identifier_ = com.google.protobuf.ByteString.EMPTY;
+        id_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
         delta_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -2259,7 +2281,7 @@ public final class JInPiqi {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.identifier_ = identifier_;
+        result.id_ = id_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
@@ -2284,8 +2306,8 @@ public final class JInPiqi {
       
       public Builder mergeFrom(JInPiqi.handle_timer other) {
         if (other == JInPiqi.handle_timer.getDefaultInstance()) return this;
-        if (other.hasIdentifier()) {
-          setIdentifier(other.getIdentifier());
+        if (other.hasId()) {
+          setId(other.getId());
         }
         if (other.hasDelta()) {
           setDelta(other.getDelta());
@@ -2298,7 +2320,7 @@ public final class JInPiqi {
       }
       
       public final boolean isInitialized() {
-        if (!hasIdentifier()) {
+        if (!hasId()) {
           
           return false;
         }
@@ -2338,7 +2360,7 @@ public final class JInPiqi {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              identifier_ = input.readBytes();
+              id_ = input.readBytes();
               break;
             }
             case 16: {
@@ -2357,28 +2379,40 @@ public final class JInPiqi {
       
       private int bitField0_;
       
-      // required bytes identifier = 1;
-      private com.google.protobuf.ByteString identifier_ = com.google.protobuf.ByteString.EMPTY;
-      public boolean hasIdentifier() {
+      // required string id = 1;
+      private java.lang.Object id_ = "";
+      public boolean hasId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public com.google.protobuf.ByteString getIdentifier() {
-        return identifier_;
+      public String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          id_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
       }
-      public Builder setIdentifier(com.google.protobuf.ByteString value) {
+      public Builder setId(String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   bitField0_ |= 0x00000001;
-        identifier_ = value;
+        id_ = value;
         onChanged();
         return this;
       }
-      public Builder clearIdentifier() {
+      public Builder clearId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        identifier_ = getDefaultInstance().getIdentifier();
+        id_ = getDefaultInstance().getId();
         onChanged();
         return this;
+      }
+      void setId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
       }
       
       // required uint32 delta = 2;
@@ -2437,7 +2471,523 @@ public final class JInPiqi {
     // @@protoc_insertion_point(class_scope:handle_timer)
   }
   
-  public interface commandOrBuilder
+  public interface handle_timer_completeOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required string id = 1;
+    boolean hasId();
+    String getId();
+    
+    // required uint32 delta = 2;
+    boolean hasDelta();
+    int getDelta();
+    
+    // required bytes state = 3;
+    boolean hasState();
+    com.google.protobuf.ByteString getState();
+  }
+  public static final class handle_timer_complete extends
+      com.google.protobuf.GeneratedMessage
+      implements handle_timer_completeOrBuilder {
+    // Use handle_timer_complete.newBuilder() to construct.
+    private handle_timer_complete(Builder builder) {
+      super(builder);
+    }
+    private handle_timer_complete(boolean noInit) {}
+    
+    private static final handle_timer_complete defaultInstance;
+    public static handle_timer_complete getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public handle_timer_complete getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return JInPiqi.internal_static_handle_timer_complete_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return JInPiqi.internal_static_handle_timer_complete_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required string id = 1;
+    public static final int ID_FIELD_NUMBER = 1;
+    private java.lang.Object id_;
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          id_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required uint32 delta = 2;
+    public static final int DELTA_FIELD_NUMBER = 2;
+    private int delta_;
+    public boolean hasDelta() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public int getDelta() {
+      return delta_;
+    }
+    
+    // required bytes state = 3;
+    public static final int STATE_FIELD_NUMBER = 3;
+    private com.google.protobuf.ByteString state_;
+    public boolean hasState() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public com.google.protobuf.ByteString getState() {
+      return state_;
+    }
+    
+    private void initFields() {
+      id_ = "";
+      delta_ = 0;
+      state_ = com.google.protobuf.ByteString.EMPTY;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDelta()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasState()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeUInt32(2, delta_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, state_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, delta_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, state_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static JInPiqi.handle_timer_complete parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static JInPiqi.handle_timer_complete parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static JInPiqi.handle_timer_complete parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static JInPiqi.handle_timer_complete parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static JInPiqi.handle_timer_complete parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static JInPiqi.handle_timer_complete parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static JInPiqi.handle_timer_complete parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static JInPiqi.handle_timer_complete parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static JInPiqi.handle_timer_complete parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static JInPiqi.handle_timer_complete parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(JInPiqi.handle_timer_complete prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements JInPiqi.handle_timer_completeOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return JInPiqi.internal_static_handle_timer_complete_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return JInPiqi.internal_static_handle_timer_complete_fieldAccessorTable;
+      }
+      
+      // Construct using JInPiqi.handle_timer_complete.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        id_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        delta_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        state_ = com.google.protobuf.ByteString.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return JInPiqi.handle_timer_complete.getDescriptor();
+      }
+      
+      public JInPiqi.handle_timer_complete getDefaultInstanceForType() {
+        return JInPiqi.handle_timer_complete.getDefaultInstance();
+      }
+      
+      public JInPiqi.handle_timer_complete build() {
+        JInPiqi.handle_timer_complete result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private JInPiqi.handle_timer_complete buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        JInPiqi.handle_timer_complete result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public JInPiqi.handle_timer_complete buildPartial() {
+        JInPiqi.handle_timer_complete result = new JInPiqi.handle_timer_complete(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.id_ = id_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.delta_ = delta_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.state_ = state_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof JInPiqi.handle_timer_complete) {
+          return mergeFrom((JInPiqi.handle_timer_complete)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(JInPiqi.handle_timer_complete other) {
+        if (other == JInPiqi.handle_timer_complete.getDefaultInstance()) return this;
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        if (other.hasDelta()) {
+          setDelta(other.getDelta());
+        }
+        if (other.hasState()) {
+          setState(other.getState());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasId()) {
+          
+          return false;
+        }
+        if (!hasDelta()) {
+          
+          return false;
+        }
+        if (!hasState()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              id_ = input.readBytes();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              delta_ = input.readUInt32();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              state_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required string id = 1;
+      private java.lang.Object id_ = "";
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          id_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setId(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = getDefaultInstance().getId();
+        onChanged();
+        return this;
+      }
+      void setId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+      }
+      
+      // required uint32 delta = 2;
+      private int delta_ ;
+      public boolean hasDelta() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public int getDelta() {
+        return delta_;
+      }
+      public Builder setDelta(int value) {
+        bitField0_ |= 0x00000002;
+        delta_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDelta() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        delta_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required bytes state = 3;
+      private com.google.protobuf.ByteString state_ = com.google.protobuf.ByteString.EMPTY;
+      public boolean hasState() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public com.google.protobuf.ByteString getState() {
+        return state_;
+      }
+      public Builder setState(com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        state_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearState() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        state_ = getDefaultInstance().getState();
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:handle_timer_complete)
+    }
+    
+    static {
+      defaultInstance = new handle_timer_complete(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:handle_timer_complete)
+  }
+  
+  public interface requestOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
     // optional .init init = 1;
@@ -2464,33 +3014,43 @@ public final class JInPiqi {
     boolean hasHandleTimer();
     JInPiqi.handle_timer getHandleTimer();
     JInPiqi.handle_timerOrBuilder getHandleTimerOrBuilder();
+    
+    // optional .handle_timer_complete handle_timer_complete = 6;
+    boolean hasHandleTimerComplete();
+    JInPiqi.handle_timer_complete getHandleTimerComplete();
+    JInPiqi.handle_timer_completeOrBuilder getHandleTimerCompleteOrBuilder();
+    
+    // optional .system_response system = 7;
+    boolean hasSystem();
+    JSystemPiqi.system_response getSystem();
+    JSystemPiqi.system_responseOrBuilder getSystemOrBuilder();
   }
-  public static final class command extends
+  public static final class request extends
       com.google.protobuf.GeneratedMessage
-      implements commandOrBuilder {
-    // Use command.newBuilder() to construct.
-    private command(Builder builder) {
+      implements requestOrBuilder {
+    // Use request.newBuilder() to construct.
+    private request(Builder builder) {
       super(builder);
     }
-    private command(boolean noInit) {}
+    private request(boolean noInit) {}
     
-    private static final command defaultInstance;
-    public static command getDefaultInstance() {
+    private static final request defaultInstance;
+    public static request getDefaultInstance() {
       return defaultInstance;
     }
     
-    public command getDefaultInstanceForType() {
+    public request getDefaultInstanceForType() {
       return defaultInstance;
     }
     
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return JInPiqi.internal_static_command_descriptor;
+      return JInPiqi.internal_static_request_descriptor;
     }
     
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return JInPiqi.internal_static_command_fieldAccessorTable;
+      return JInPiqi.internal_static_request_fieldAccessorTable;
     }
     
     private int bitField0_;
@@ -2559,12 +3119,40 @@ public final class JInPiqi {
       return handleTimer_;
     }
     
+    // optional .handle_timer_complete handle_timer_complete = 6;
+    public static final int HANDLE_TIMER_COMPLETE_FIELD_NUMBER = 6;
+    private JInPiqi.handle_timer_complete handleTimerComplete_;
+    public boolean hasHandleTimerComplete() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    public JInPiqi.handle_timer_complete getHandleTimerComplete() {
+      return handleTimerComplete_;
+    }
+    public JInPiqi.handle_timer_completeOrBuilder getHandleTimerCompleteOrBuilder() {
+      return handleTimerComplete_;
+    }
+    
+    // optional .system_response system = 7;
+    public static final int SYSTEM_FIELD_NUMBER = 7;
+    private JSystemPiqi.system_response system_;
+    public boolean hasSystem() {
+      return ((bitField0_ & 0x00000040) == 0x00000040);
+    }
+    public JSystemPiqi.system_response getSystem() {
+      return system_;
+    }
+    public JSystemPiqi.system_responseOrBuilder getSystemOrBuilder() {
+      return system_;
+    }
+    
     private void initFields() {
       init_ = JInPiqi.init.getDefaultInstance();
       handleUserJoin_ = JInPiqi.handle_user_join.getDefaultInstance();
       handleUserLeave_ = JInPiqi.handle_user_leave.getDefaultInstance();
       handleAction_ = JInPiqi.handle_action.getDefaultInstance();
       handleTimer_ = JInPiqi.handle_timer.getDefaultInstance();
+      handleTimerComplete_ = JInPiqi.handle_timer_complete.getDefaultInstance();
+      system_ = JSystemPiqi.system_response.getDefaultInstance();
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2595,6 +3183,18 @@ public final class JInPiqi {
           return false;
         }
       }
+      if (hasHandleTimerComplete()) {
+        if (!getHandleTimerComplete().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
+      if (hasSystem()) {
+        if (!getSystem().isInitialized()) {
+          memoizedIsInitialized = 0;
+          return false;
+        }
+      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -2616,6 +3216,12 @@ public final class JInPiqi {
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         output.writeMessage(5, handleTimer_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeMessage(6, handleTimerComplete_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        output.writeMessage(7, system_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2646,6 +3252,14 @@ public final class JInPiqi {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, handleTimer_);
       }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, handleTimerComplete_);
+      }
+      if (((bitField0_ & 0x00000040) == 0x00000040)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(7, system_);
+      }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
       return size;
@@ -2658,41 +3272,41 @@ public final class JInPiqi {
       return super.writeReplace();
     }
     
-    public static JInPiqi.command parseFrom(
+    public static JInPiqi.request parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JInPiqi.command parseFrom(
+    public static JInPiqi.request parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JInPiqi.command parseFrom(byte[] data)
+    public static JInPiqi.request parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data).buildParsed();
     }
-    public static JInPiqi.command parseFrom(
+    public static JInPiqi.request parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return newBuilder().mergeFrom(data, extensionRegistry)
                .buildParsed();
     }
-    public static JInPiqi.command parseFrom(java.io.InputStream input)
+    public static JInPiqi.request parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JInPiqi.command parseFrom(
+    public static JInPiqi.request parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input, extensionRegistry)
                .buildParsed();
     }
-    public static JInPiqi.command parseDelimitedFrom(java.io.InputStream input)
+    public static JInPiqi.request parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       Builder builder = newBuilder();
       if (builder.mergeDelimitedFrom(input)) {
@@ -2701,7 +3315,7 @@ public final class JInPiqi {
         return null;
       }
     }
-    public static JInPiqi.command parseDelimitedFrom(
+    public static JInPiqi.request parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2712,12 +3326,12 @@ public final class JInPiqi {
         return null;
       }
     }
-    public static JInPiqi.command parseFrom(
+    public static JInPiqi.request parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return newBuilder().mergeFrom(input).buildParsed();
     }
-    public static JInPiqi.command parseFrom(
+    public static JInPiqi.request parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2727,7 +3341,7 @@ public final class JInPiqi {
     
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(JInPiqi.command prototype) {
+    public static Builder newBuilder(JInPiqi.request prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -2740,18 +3354,18 @@ public final class JInPiqi {
     }
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements JInPiqi.commandOrBuilder {
+       implements JInPiqi.requestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return JInPiqi.internal_static_command_descriptor;
+        return JInPiqi.internal_static_request_descriptor;
       }
       
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return JInPiqi.internal_static_command_fieldAccessorTable;
+        return JInPiqi.internal_static_request_fieldAccessorTable;
       }
       
-      // Construct using JInPiqi.command.newBuilder()
+      // Construct using JInPiqi.request.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -2767,6 +3381,8 @@ public final class JInPiqi {
           getHandleUserLeaveFieldBuilder();
           getHandleActionFieldBuilder();
           getHandleTimerFieldBuilder();
+          getHandleTimerCompleteFieldBuilder();
+          getSystemFieldBuilder();
         }
       }
       private static Builder create() {
@@ -2805,6 +3421,18 @@ public final class JInPiqi {
           handleTimerBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000010);
+        if (handleTimerCompleteBuilder_ == null) {
+          handleTimerComplete_ = JInPiqi.handle_timer_complete.getDefaultInstance();
+        } else {
+          handleTimerCompleteBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        if (systemBuilder_ == null) {
+          system_ = JSystemPiqi.system_response.getDefaultInstance();
+        } else {
+          systemBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
         return this;
       }
       
@@ -2814,24 +3442,24 @@ public final class JInPiqi {
       
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return JInPiqi.command.getDescriptor();
+        return JInPiqi.request.getDescriptor();
       }
       
-      public JInPiqi.command getDefaultInstanceForType() {
-        return JInPiqi.command.getDefaultInstance();
+      public JInPiqi.request getDefaultInstanceForType() {
+        return JInPiqi.request.getDefaultInstance();
       }
       
-      public JInPiqi.command build() {
-        JInPiqi.command result = buildPartial();
+      public JInPiqi.request build() {
+        JInPiqi.request result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
       
-      private JInPiqi.command buildParsed()
+      private JInPiqi.request buildParsed()
           throws com.google.protobuf.InvalidProtocolBufferException {
-        JInPiqi.command result = buildPartial();
+        JInPiqi.request result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(
             result).asInvalidProtocolBufferException();
@@ -2839,8 +3467,8 @@ public final class JInPiqi {
         return result;
       }
       
-      public JInPiqi.command buildPartial() {
-        JInPiqi.command result = new JInPiqi.command(this);
+      public JInPiqi.request buildPartial() {
+        JInPiqi.request result = new JInPiqi.request(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -2883,22 +3511,38 @@ public final class JInPiqi {
         } else {
           result.handleTimer_ = handleTimerBuilder_.build();
         }
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        if (handleTimerCompleteBuilder_ == null) {
+          result.handleTimerComplete_ = handleTimerComplete_;
+        } else {
+          result.handleTimerComplete_ = handleTimerCompleteBuilder_.build();
+        }
+        if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
+          to_bitField0_ |= 0x00000040;
+        }
+        if (systemBuilder_ == null) {
+          result.system_ = system_;
+        } else {
+          result.system_ = systemBuilder_.build();
+        }
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
       
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof JInPiqi.command) {
-          return mergeFrom((JInPiqi.command)other);
+        if (other instanceof JInPiqi.request) {
+          return mergeFrom((JInPiqi.request)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
       
-      public Builder mergeFrom(JInPiqi.command other) {
-        if (other == JInPiqi.command.getDefaultInstance()) return this;
+      public Builder mergeFrom(JInPiqi.request other) {
+        if (other == JInPiqi.request.getDefaultInstance()) return this;
         if (other.hasInit()) {
           mergeInit(other.getInit());
         }
@@ -2913,6 +3557,12 @@ public final class JInPiqi {
         }
         if (other.hasHandleTimer()) {
           mergeHandleTimer(other.getHandleTimer());
+        }
+        if (other.hasHandleTimerComplete()) {
+          mergeHandleTimerComplete(other.getHandleTimerComplete());
+        }
+        if (other.hasSystem()) {
+          mergeSystem(other.getSystem());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -2939,6 +3589,18 @@ public final class JInPiqi {
         }
         if (hasHandleTimer()) {
           if (!getHandleTimer().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasHandleTimerComplete()) {
+          if (!getHandleTimerComplete().isInitialized()) {
+            
+            return false;
+          }
+        }
+        if (hasSystem()) {
+          if (!getSystem().isInitialized()) {
             
             return false;
           }
@@ -3012,6 +3674,24 @@ public final class JInPiqi {
               }
               input.readMessage(subBuilder, extensionRegistry);
               setHandleTimer(subBuilder.buildPartial());
+              break;
+            }
+            case 50: {
+              JInPiqi.handle_timer_complete.Builder subBuilder = JInPiqi.handle_timer_complete.newBuilder();
+              if (hasHandleTimerComplete()) {
+                subBuilder.mergeFrom(getHandleTimerComplete());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setHandleTimerComplete(subBuilder.buildPartial());
+              break;
+            }
+            case 58: {
+              JSystemPiqi.system_response.Builder subBuilder = JSystemPiqi.system_response.newBuilder();
+              if (hasSystem()) {
+                subBuilder.mergeFrom(getSystem());
+              }
+              input.readMessage(subBuilder, extensionRegistry);
+              setSystem(subBuilder.buildPartial());
               break;
             }
           }
@@ -3470,15 +4150,195 @@ public final class JInPiqi {
         return handleTimerBuilder_;
       }
       
-      // @@protoc_insertion_point(builder_scope:command)
+      // optional .handle_timer_complete handle_timer_complete = 6;
+      private JInPiqi.handle_timer_complete handleTimerComplete_ = JInPiqi.handle_timer_complete.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JInPiqi.handle_timer_complete, JInPiqi.handle_timer_complete.Builder, JInPiqi.handle_timer_completeOrBuilder> handleTimerCompleteBuilder_;
+      public boolean hasHandleTimerComplete() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      public JInPiqi.handle_timer_complete getHandleTimerComplete() {
+        if (handleTimerCompleteBuilder_ == null) {
+          return handleTimerComplete_;
+        } else {
+          return handleTimerCompleteBuilder_.getMessage();
+        }
+      }
+      public Builder setHandleTimerComplete(JInPiqi.handle_timer_complete value) {
+        if (handleTimerCompleteBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          handleTimerComplete_ = value;
+          onChanged();
+        } else {
+          handleTimerCompleteBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder setHandleTimerComplete(
+          JInPiqi.handle_timer_complete.Builder builderForValue) {
+        if (handleTimerCompleteBuilder_ == null) {
+          handleTimerComplete_ = builderForValue.build();
+          onChanged();
+        } else {
+          handleTimerCompleteBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder mergeHandleTimerComplete(JInPiqi.handle_timer_complete value) {
+        if (handleTimerCompleteBuilder_ == null) {
+          if (((bitField0_ & 0x00000020) == 0x00000020) &&
+              handleTimerComplete_ != JInPiqi.handle_timer_complete.getDefaultInstance()) {
+            handleTimerComplete_ =
+              JInPiqi.handle_timer_complete.newBuilder(handleTimerComplete_).mergeFrom(value).buildPartial();
+          } else {
+            handleTimerComplete_ = value;
+          }
+          onChanged();
+        } else {
+          handleTimerCompleteBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000020;
+        return this;
+      }
+      public Builder clearHandleTimerComplete() {
+        if (handleTimerCompleteBuilder_ == null) {
+          handleTimerComplete_ = JInPiqi.handle_timer_complete.getDefaultInstance();
+          onChanged();
+        } else {
+          handleTimerCompleteBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+      public JInPiqi.handle_timer_complete.Builder getHandleTimerCompleteBuilder() {
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return getHandleTimerCompleteFieldBuilder().getBuilder();
+      }
+      public JInPiqi.handle_timer_completeOrBuilder getHandleTimerCompleteOrBuilder() {
+        if (handleTimerCompleteBuilder_ != null) {
+          return handleTimerCompleteBuilder_.getMessageOrBuilder();
+        } else {
+          return handleTimerComplete_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          JInPiqi.handle_timer_complete, JInPiqi.handle_timer_complete.Builder, JInPiqi.handle_timer_completeOrBuilder> 
+          getHandleTimerCompleteFieldBuilder() {
+        if (handleTimerCompleteBuilder_ == null) {
+          handleTimerCompleteBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JInPiqi.handle_timer_complete, JInPiqi.handle_timer_complete.Builder, JInPiqi.handle_timer_completeOrBuilder>(
+                  handleTimerComplete_,
+                  getParentForChildren(),
+                  isClean());
+          handleTimerComplete_ = null;
+        }
+        return handleTimerCompleteBuilder_;
+      }
+      
+      // optional .system_response system = 7;
+      private JSystemPiqi.system_response system_ = JSystemPiqi.system_response.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          JSystemPiqi.system_response, JSystemPiqi.system_response.Builder, JSystemPiqi.system_responseOrBuilder> systemBuilder_;
+      public boolean hasSystem() {
+        return ((bitField0_ & 0x00000040) == 0x00000040);
+      }
+      public JSystemPiqi.system_response getSystem() {
+        if (systemBuilder_ == null) {
+          return system_;
+        } else {
+          return systemBuilder_.getMessage();
+        }
+      }
+      public Builder setSystem(JSystemPiqi.system_response value) {
+        if (systemBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          system_ = value;
+          onChanged();
+        } else {
+          systemBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder setSystem(
+          JSystemPiqi.system_response.Builder builderForValue) {
+        if (systemBuilder_ == null) {
+          system_ = builderForValue.build();
+          onChanged();
+        } else {
+          systemBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder mergeSystem(JSystemPiqi.system_response value) {
+        if (systemBuilder_ == null) {
+          if (((bitField0_ & 0x00000040) == 0x00000040) &&
+              system_ != JSystemPiqi.system_response.getDefaultInstance()) {
+            system_ =
+              JSystemPiqi.system_response.newBuilder(system_).mergeFrom(value).buildPartial();
+          } else {
+            system_ = value;
+          }
+          onChanged();
+        } else {
+          systemBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000040;
+        return this;
+      }
+      public Builder clearSystem() {
+        if (systemBuilder_ == null) {
+          system_ = JSystemPiqi.system_response.getDefaultInstance();
+          onChanged();
+        } else {
+          systemBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000040);
+        return this;
+      }
+      public JSystemPiqi.system_response.Builder getSystemBuilder() {
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return getSystemFieldBuilder().getBuilder();
+      }
+      public JSystemPiqi.system_responseOrBuilder getSystemOrBuilder() {
+        if (systemBuilder_ != null) {
+          return systemBuilder_.getMessageOrBuilder();
+        } else {
+          return system_;
+        }
+      }
+      private com.google.protobuf.SingleFieldBuilder<
+          JSystemPiqi.system_response, JSystemPiqi.system_response.Builder, JSystemPiqi.system_responseOrBuilder> 
+          getSystemFieldBuilder() {
+        if (systemBuilder_ == null) {
+          systemBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              JSystemPiqi.system_response, JSystemPiqi.system_response.Builder, JSystemPiqi.system_responseOrBuilder>(
+                  system_,
+                  getParentForChildren(),
+                  isClean());
+          system_ = null;
+        }
+        return systemBuilder_;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:request)
     }
     
     static {
-      defaultInstance = new command(true);
+      defaultInstance = new request(true);
       defaultInstance.initFields();
     }
     
-    // @@protoc_insertion_point(class_scope:command)
+    // @@protoc_insertion_point(class_scope:request)
   }
   
   private static com.google.protobuf.Descriptors.Descriptor
@@ -3507,10 +4367,15 @@ public final class JInPiqi {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_handle_timer_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_command_descriptor;
+    internal_static_handle_timer_complete_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_command_fieldAccessorTable;
+      internal_static_handle_timer_complete_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_request_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_request_fieldAccessorTable;
   
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3520,19 +4385,23 @@ public final class JInPiqi {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017j-in.piqi.proto\"\033\n\004init\022\023\n\013userid_list" +
-      "\030\001 \003(\t\"1\n\020handle_user_join\022\016\n\006userid\030\001 \002" +
-      "(\t\022\r\n\005state\030\002 \002(\014\"2\n\021handle_user_leave\022\016" +
-      "\n\006userid\030\001 \002(\t\022\r\n\005state\030\002 \002(\014\"Z\n\rhandle_" +
-      "action\022\016\n\006userid\030\001 \002(\t\022\024\n\014command_name\030\002" +
-      " \002(\t\022\024\n\014command_args\030\003 \003(\014\022\r\n\005state\030\004 \002(" +
-      "\014\"@\n\014handle_timer\022\022\n\nidentifier\030\001 \002(\014\022\r\n" +
-      "\005delta\030\002 \002(\r\022\r\n\005state\030\003 \002(\014\"\306\001\n\007command\022" +
+      "\n\017j-in.piqi.proto\032\023j-system.piqi.proto\"\033" +
+      "\n\004init\022\023\n\013userid_list\030\001 \003(\t\"1\n\020handle_us" +
+      "er_join\022\016\n\006userid\030\001 \002(\t\022\r\n\005state\030\002 \002(\014\"2" +
+      "\n\021handle_user_leave\022\016\n\006userid\030\001 \002(\t\022\r\n\005s" +
+      "tate\030\002 \002(\014\"Z\n\rhandle_action\022\016\n\006userid\030\001 " +
+      "\002(\t\022\024\n\014command_name\030\002 \002(\t\022\024\n\014command_arg" +
+      "s\030\003 \003(\014\022\r\n\005state\030\004 \002(\014\"8\n\014handle_timer\022\n" +
+      "\n\002id\030\001 \002(\t\022\r\n\005delta\030\002 \002(\r\022\r\n\005state\030\003 \002(\014" +
+      "\"A\n\025handle_timer_complete\022\n\n\002id\030\001 \002(\t\022\r\n" +
+      "\005delta\030\002 \002(\r\022\r\n\005state\030\003 \002(\014\"\237\002\n\007request\022",
       "\023\n\004init\030\001 \001(\0132\005.init\022+\n\020handle_user_join" +
-      "\030\002 \001(\0132\021.handle_user_join\022-\n\021handle_user",
+      "\030\002 \001(\0132\021.handle_user_join\022-\n\021handle_user" +
       "_leave\030\003 \001(\0132\022.handle_user_leave\022%\n\rhand" +
       "le_action\030\004 \001(\0132\016.handle_action\022#\n\014handl" +
-      "e_timer\030\005 \001(\0132\r.handle_timer"
+      "e_timer\030\005 \001(\0132\r.handle_timer\0225\n\025handle_t" +
+      "imer_complete\030\006 \001(\0132\026.handle_timer_compl" +
+      "ete\022 \n\006system\030\007 \001(\0132\020.system_response"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -3576,23 +4445,32 @@ public final class JInPiqi {
           internal_static_handle_timer_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_handle_timer_descriptor,
-              new java.lang.String[] { "Identifier", "Delta", "State", },
+              new java.lang.String[] { "Id", "Delta", "State", },
               JInPiqi.handle_timer.class,
               JInPiqi.handle_timer.Builder.class);
-          internal_static_command_descriptor =
+          internal_static_handle_timer_complete_descriptor =
             getDescriptor().getMessageTypes().get(5);
-          internal_static_command_fieldAccessorTable = new
+          internal_static_handle_timer_complete_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_command_descriptor,
-              new java.lang.String[] { "Init", "HandleUserJoin", "HandleUserLeave", "HandleAction", "HandleTimer", },
-              JInPiqi.command.class,
-              JInPiqi.command.Builder.class);
+              internal_static_handle_timer_complete_descriptor,
+              new java.lang.String[] { "Id", "Delta", "State", },
+              JInPiqi.handle_timer_complete.class,
+              JInPiqi.handle_timer_complete.Builder.class);
+          internal_static_request_descriptor =
+            getDescriptor().getMessageTypes().get(6);
+          internal_static_request_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_request_descriptor,
+              new java.lang.String[] { "Init", "HandleUserJoin", "HandleUserLeave", "HandleAction", "HandleTimer", "HandleTimerComplete", "System", },
+              JInPiqi.request.class,
+              JInPiqi.request.Builder.class);
           return null;
         }
       };
     com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          JSystemPiqi.getDescriptor(),
         }, assigner);
   }
   
