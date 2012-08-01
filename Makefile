@@ -6,3 +6,8 @@ build:
 
 generate:
 	protoc -I=./ --java_out=./src *.proto
+
+start: 
+	@java -classpath lib/protobuf-java-2.4.1.jar:bin GLSProtoServer
+
+

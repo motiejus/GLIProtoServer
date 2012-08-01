@@ -1917,13 +1917,13 @@ public final class JOutPiqi {
     boolean hasId();
     String getId();
     
-    // required uint32 duration_in_ms = 2;
-    boolean hasDurationInMs();
-    int getDurationInMs();
+    // required uint32 duration = 2;
+    boolean hasDuration();
+    int getDuration();
     
-    // required uint32 tick_duration_in_ms = 3;
-    boolean hasTickDurationInMs();
-    int getTickDurationInMs();
+    // required uint32 repeats = 3;
+    boolean hasRepeats();
+    int getRepeats();
   }
   public static final class timer extends
       com.google.protobuf.GeneratedMessage
@@ -1986,30 +1986,30 @@ public final class JOutPiqi {
       }
     }
     
-    // required uint32 duration_in_ms = 2;
-    public static final int DURATION_IN_MS_FIELD_NUMBER = 2;
-    private int durationInMs_;
-    public boolean hasDurationInMs() {
+    // required uint32 duration = 2;
+    public static final int DURATION_FIELD_NUMBER = 2;
+    private int duration_;
+    public boolean hasDuration() {
       return ((bitField0_ & 0x00000002) == 0x00000002);
     }
-    public int getDurationInMs() {
-      return durationInMs_;
+    public int getDuration() {
+      return duration_;
     }
     
-    // required uint32 tick_duration_in_ms = 3;
-    public static final int TICK_DURATION_IN_MS_FIELD_NUMBER = 3;
-    private int tickDurationInMs_;
-    public boolean hasTickDurationInMs() {
+    // required uint32 repeats = 3;
+    public static final int REPEATS_FIELD_NUMBER = 3;
+    private int repeats_;
+    public boolean hasRepeats() {
       return ((bitField0_ & 0x00000004) == 0x00000004);
     }
-    public int getTickDurationInMs() {
-      return tickDurationInMs_;
+    public int getRepeats() {
+      return repeats_;
     }
     
     private void initFields() {
       id_ = "";
-      durationInMs_ = 0;
-      tickDurationInMs_ = 0;
+      duration_ = 0;
+      repeats_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
@@ -2020,11 +2020,11 @@ public final class JOutPiqi {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasDurationInMs()) {
+      if (!hasDuration()) {
         memoizedIsInitialized = 0;
         return false;
       }
-      if (!hasTickDurationInMs()) {
+      if (!hasRepeats()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -2039,10 +2039,10 @@ public final class JOutPiqi {
         output.writeBytes(1, getIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeUInt32(2, durationInMs_);
+        output.writeUInt32(2, duration_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeUInt32(3, tickDurationInMs_);
+        output.writeUInt32(3, repeats_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -2059,11 +2059,11 @@ public final class JOutPiqi {
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, durationInMs_);
+          .computeUInt32Size(2, duration_);
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, tickDurationInMs_);
+          .computeUInt32Size(3, repeats_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2191,9 +2191,9 @@ public final class JOutPiqi {
         super.clear();
         id_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        durationInMs_ = 0;
+        duration_ = 0;
         bitField0_ = (bitField0_ & ~0x00000002);
-        tickDurationInMs_ = 0;
+        repeats_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
         return this;
       }
@@ -2240,11 +2240,11 @@ public final class JOutPiqi {
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.durationInMs_ = durationInMs_;
+        result.duration_ = duration_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.tickDurationInMs_ = tickDurationInMs_;
+        result.repeats_ = repeats_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -2264,11 +2264,11 @@ public final class JOutPiqi {
         if (other.hasId()) {
           setId(other.getId());
         }
-        if (other.hasDurationInMs()) {
-          setDurationInMs(other.getDurationInMs());
+        if (other.hasDuration()) {
+          setDuration(other.getDuration());
         }
-        if (other.hasTickDurationInMs()) {
-          setTickDurationInMs(other.getTickDurationInMs());
+        if (other.hasRepeats()) {
+          setRepeats(other.getRepeats());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
@@ -2279,11 +2279,11 @@ public final class JOutPiqi {
           
           return false;
         }
-        if (!hasDurationInMs()) {
+        if (!hasDuration()) {
           
           return false;
         }
-        if (!hasTickDurationInMs()) {
+        if (!hasRepeats()) {
           
           return false;
         }
@@ -2320,12 +2320,12 @@ public final class JOutPiqi {
             }
             case 16: {
               bitField0_ |= 0x00000002;
-              durationInMs_ = input.readUInt32();
+              duration_ = input.readUInt32();
               break;
             }
             case 24: {
               bitField0_ |= 0x00000004;
-              tickDurationInMs_ = input.readUInt32();
+              repeats_ = input.readUInt32();
               break;
             }
           }
@@ -2370,44 +2370,44 @@ public final class JOutPiqi {
         onChanged();
       }
       
-      // required uint32 duration_in_ms = 2;
-      private int durationInMs_ ;
-      public boolean hasDurationInMs() {
+      // required uint32 duration = 2;
+      private int duration_ ;
+      public boolean hasDuration() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
       }
-      public int getDurationInMs() {
-        return durationInMs_;
+      public int getDuration() {
+        return duration_;
       }
-      public Builder setDurationInMs(int value) {
+      public Builder setDuration(int value) {
         bitField0_ |= 0x00000002;
-        durationInMs_ = value;
+        duration_ = value;
         onChanged();
         return this;
       }
-      public Builder clearDurationInMs() {
+      public Builder clearDuration() {
         bitField0_ = (bitField0_ & ~0x00000002);
-        durationInMs_ = 0;
+        duration_ = 0;
         onChanged();
         return this;
       }
       
-      // required uint32 tick_duration_in_ms = 3;
-      private int tickDurationInMs_ ;
-      public boolean hasTickDurationInMs() {
+      // required uint32 repeats = 3;
+      private int repeats_ ;
+      public boolean hasRepeats() {
         return ((bitField0_ & 0x00000004) == 0x00000004);
       }
-      public int getTickDurationInMs() {
-        return tickDurationInMs_;
+      public int getRepeats() {
+        return repeats_;
       }
-      public Builder setTickDurationInMs(int value) {
+      public Builder setRepeats(int value) {
         bitField0_ |= 0x00000004;
-        tickDurationInMs_ = value;
+        repeats_ = value;
         onChanged();
         return this;
       }
-      public Builder clearTickDurationInMs() {
+      public Builder clearRepeats() {
         bitField0_ = (bitField0_ & ~0x00000004);
-        tickDurationInMs_ = 0;
+        repeats_ = 0;
         onChanged();
         return this;
       }
@@ -4682,16 +4682,15 @@ public final class JOutPiqi {
       "ist\"\"\n\006result\022\n\n\002ok\030\001 \001(\010\022\014\n\004stop\030\002 \001(\010\"" +
       "T\n\007message\022\035\n\trecipient\030\001 \002(\0132\n.recipien" +
       "t\022\024\n\014command_name\030\002 \002(\t\022\024\n\014command_args\030" +
-      "\003 \003(\014\"H\n\005timer\022\n\n\002id\030\001 \002(\t\022\026\n\016duration_i" +
-      "n_ms\030\002 \002(\r\022\033\n\023tick_duration_in_ms\030\003 \002(\r\"" +
-      "w\n\006action\022\022\n\nstop_timer\030\001 \001(\t\022\033\n\013start_t" +
-      "imer\030\002 \001(\0132\006.timer\022!\n\013kick_player\030\003 \001(\0132",
-      "\014.userid_list\022\031\n\007message\030\004 \001(\0132\010.message" +
-      "\"U\n\021callback_response\022\027\n\006result\030\001 \002(\0132\007." +
-      "result\022\r\n\005state\030\002 \002(\014\022\030\n\007actions\030\003 \003(\0132\007" +
-      ".action\"Q\n\010response\022$\n\010response\030\001 \001(\0132\022." +
-      "callback_response\022\037\n\006system\030\002 \001(\0132\017.syst" +
-      "em_request"
+      "\003 \003(\014\"6\n\005timer\022\n\n\002id\030\001 \002(\t\022\020\n\010duration\030\002" +
+      " \002(\r\022\017\n\007repeats\030\003 \002(\r\"w\n\006action\022\022\n\nstop_" +
+      "timer\030\001 \001(\t\022\033\n\013start_timer\030\002 \001(\0132\006.timer" +
+      "\022!\n\013kick_player\030\003 \001(\0132\014.userid_list\022\031\n\007m",
+      "essage\030\004 \001(\0132\010.message\"U\n\021callback_respo" +
+      "nse\022\027\n\006result\030\001 \002(\0132\007.result\022\r\n\005state\030\002 " +
+      "\002(\014\022\030\n\007actions\030\003 \003(\0132\007.action\"Q\n\010respons" +
+      "e\022$\n\010response\030\001 \001(\0132\022.callback_response\022" +
+      "\037\n\006system\030\002 \001(\0132\017.system_request"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -4735,7 +4734,7 @@ public final class JOutPiqi {
           internal_static_timer_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_timer_descriptor,
-              new java.lang.String[] { "Id", "DurationInMs", "TickDurationInMs", },
+              new java.lang.String[] { "Id", "Duration", "Repeats", },
               JOutPiqi.timer.class,
               JOutPiqi.timer.Builder.class);
           internal_static_action_descriptor =

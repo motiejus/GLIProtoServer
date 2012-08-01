@@ -21,8 +21,8 @@ public class GLIExample implements GLI {
                 .addActions(
                     JOutPiqi.action.newBuilder().setStartTimer(
                         JOutPiqi.timer.newBuilder().setId("timer")
-                            .setDurationInMs(1000)
-                            .setTickDurationInMs(3000)
+                            .setDuration(1000)
+                            .setRepeats(5)
                         )
                     )
         ).build();
