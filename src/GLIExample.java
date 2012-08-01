@@ -27,22 +27,22 @@ public class GLIExample implements GLI {
     @Override
     public JOutPiqi.response handle_action(String userId, String commandName,
             List<ByteString> args, ByteString state) {
-        System.out.println("handle_action [" + commandName + "] with [" + args + "], state: ["+state.toStringUtf8() + "]");        
+        System.out.println("handle_action [" + commandName + "] with [" + args + "], state: ["+state.toStringUtf8() + "]");
         // service.buy_item_request(userId, 1, 1);
         return demo().build();
     }
 
     @Override
-    public JOutPiqi.response handle_timer(ByteString identifier, int delta,
+    public JOutPiqi.response handle_timer(String id, int delta,
             ByteString state) {
-        System.out.println("handle_timer [" + identifier.toStringUtf8() + "], delta [" + delta + "], state: [" + state.toStringUtf8() + "]");
+        System.out.println("handle_timer [" + id + "], delta [" + delta + "], state: [" + state.toStringUtf8() + "]");
         return demo().build();
     }
 
     @Override
-    public JOutPiqi.response handle_timer_complete(ByteString identifier, int delta,
+    public JOutPiqi.response handle_timer_complete(String id, int delta,
             ByteString state) {
-        System.out.println("handle_timer_complete [" + identifier.toStringUtf8() + "], delta [" + delta + "], state: [" + state.toStringUtf8() + "]");
+        System.out.println("handle_timer_complete [" + id + "], delta [" + delta + "], state: [" + state.toStringUtf8() + "]");
         return demo().build();
     }
 

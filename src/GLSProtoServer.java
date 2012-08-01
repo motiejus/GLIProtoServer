@@ -5,8 +5,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * Waits for incoming GLSResponseProto obects. When one arrives, recreates it from 
- * the inputStream and prints out its state 
+ * Waits for incoming GLSResponseProto obects. When one arrives, recreates it from
+ * the inputStream and prints out its state
  * @author kevinparkings
  *
  */
@@ -27,7 +27,7 @@ public class GLSProtoServer {
 
     public void loop(){
 		socket = new ServerSocket(PORT);
-        service = new GLIService(this); 
+        service = new GLIService(this);
 
 		while (true) {
 
@@ -58,10 +58,10 @@ public class GLSProtoServer {
 			}
 
             write_message(response);
-			
+
 			os.flush();
 			os.close();
-			
+
 			sock.close();
 		}
 	}
@@ -71,12 +71,12 @@ public class GLSProtoServer {
             write_message(JOutPiqi.response.getBuilder().setSystem(request).build());
             JInPiqi.request response = read_message();
 
-            if(response.hasSystem()){
-                JInPiqi.system_response system_response = packet.getSystem();
-                if (!system_response.hasOk()) {
-                    throw new Exception("Received error response: message: " 
-                        + system_response.getError().getMessage() + ", code: " 
-                        + system_response.getError().getCode()
+            if(packet.hasSystem()){
+                JInPiqi.system_response response = packet.getSystem();
+                if (!response.hasOk()) {
+                    throw new Exception("Received error response: message: "
+                        + response.getError().getMessage() + ", code: "
+                        + response.getError().getCode()
                     );
                 }
             }else{
@@ -86,7 +86,7 @@ public class GLSProtoServer {
         }
     }
 
-    public void write_message(Object r){        
+    public void write_message(Object r){
         OutputStream os = sock.getOutputStream();
 
         if (r != null) {
@@ -98,17 +98,17 @@ public class GLSProtoServer {
             }
     }
 
-    public void read_message(){
+    public JInPiqi.request read_message(){
         System.out.println ("Waiting for connections on port " + PORT);
 
         //This waits for an incomming message
         sock = ss.accept();
-        InputStream is = sock.getInputStream();        
+        InputStream is = sock.getInputStream();
 
         byte[] lb = new byte[4];
         int length = 0;
         //Gets the incoming data and recreates the proto object
-        
+
         is.read(lb, 0, 4);
         length = lb[0] << 24 | lb[1] << 16 | lb[2] << 8 | lb[3] << 0;
 
