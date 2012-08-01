@@ -1,6 +1,7 @@
 all: build
 
 build:
+	@mkdir -p bin
 	javac 2>&1 src/*.java -d bin -classpath lib/protobuf-java-2.4.1.jar
 
 generate:

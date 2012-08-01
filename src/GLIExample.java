@@ -11,16 +11,20 @@ public class GLIExample implements GLI {
         this.service = service;
     }
 
-        @Override
+    @Override
     public JOutPiqi.response init(List<String> players) {
         System.out.println("init, players: [" + players + "]");
-        return demo().mergeResponse(
-            JOutPiqi.callback_response.newBuilder().addActions(
-                JOutPiqi.action.newBuilder().setStartTimer(
-                JOutPiqi.timer.newBuilder().setId("timer")
-                                               .setDurationInMs(1000)
-                                               .setTickDurationInMs(3000)
-            )).build()
+        return JOutPiqi.response.newBuilder().setResponse(
+            JOutPiqi.callback_response.newBuilder()
+                .setResult(JOutPiqi.result.newBuilder().setOk(true))
+                .setState(ByteString.copyFromUtf8("newstate"))
+                .addActions(
+                    JOutPiqi.action.newBuilder().setStartTimer(
+                        JOutPiqi.timer.newBuilder().setId("timer")
+                            .setDurationInMs(1000)
+                            .setTickDurationInMs(3000)
+                        )
+                    )
         ).build();
     }
 
