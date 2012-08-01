@@ -1,4 +1,5 @@
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.ServerSocket;
@@ -14,24 +15,24 @@ public class GLSProtoServer {
 
 	private static final int PORT = 1234;
 
-    private ServerSocket socket;
-    private Socket sock;
-    private GLIService service;
+	private ServerSocket socket;
+	private Socket sock;
+	private GLSRequestHandler service;
 
 	/**
 	 * Starts the server and prints out the state of incomming GLSResponseProto objects
 	 */
-	public static void main (String [] argv) throws Exception {
-        new GLSProtoServer().loop();
-    }
+	public static void main(String[] argv) throws IOException {
+		new GLSProtoServer().loop();
+	}
 
-    public void loop(){
+	public void loop() throws IOException {
 		socket = new ServerSocket(PORT);
-        service = new GLIService(this);
+		service = new GLSRequestHandler(this);
 
 		while (true) {
 
-            JInPiqi.request req = read_message();
+			JInPiqi.request req = read_message();
 
 			JOutPiqi.response response = null;
 			GLI inst = new GLIExample(service);
@@ -51,69 +52,75 @@ public class GLSProtoServer {
 				JInPiqi.handle_timer j = req.getHandleTimer();
 				response = inst.handle_timer(j.getId(), j.getDelta(), j.getState());
 			} else if (req.hasHandleTimerComplete()) {
-                JInPiqi.handle_timer_complete j = req.getHandleTimerComplete();
-                response = inst.handle_timer_complete(j.getId(), j.getDelta(), j.getState());
-            } else {
+				JInPiqi.handle_timer_complete j = req.getHandleTimerComplete();
+				response = inst.handle_timer_complete(j.getId(), j.getDelta(), j.getState());
+			} else {
 				System.out.println("Unknown command " + req);
 			}
 
-            write_message(response);
+			write_message(response);
 
-			os.flush();
-			os.close();
+			sock.getOutputStream().close();
 
 			sock.close();
 		}
 	}
 
-    public void send_system_request(JSystemPiqi.system_request request) {
-        if (request != null) {
-            write_message(JOutPiqi.response.getBuilder().setSystem(request).build());
-            JInPiqi.request response = read_message();
+	public JSystemPiqi.system_response send_system_request(JSystemPiqi.system_request request) throws Exception {
+		JSystemPiqi.system_response response = null;
 
-            if(packet.hasSystem()){
-                JInPiqi.system_response response = packet.getSystem();
-                if (!response.hasOk()) {
-                    throw new Exception("Received error response: message: "
-                        + response.getError().getMessage() + ", code: "
-                        + response.getError().getCode()
-                    );
-                }
-            }else{
-                //for debugging
-                throw new Exception("Unexpected response received from system");
-            }
-        }
-    }
+		if (request != null) {
+			write_message(JOutPiqi.response.newBuilder().setSystem(request).build());
+			JInPiqi.request packet = read_message();
 
-    public void write_message(Object r){
-        OutputStream os = sock.getOutputStream();
+			if(packet.hasSystem()){
+				response = packet.getSystem();
+				if (!response.hasOk()) {
+					System.out.println("Received error response: message: "
+							+ response.getError().getDescription() + ", code: "
+							+ response.getError().getCode()
+							);
 
-        if (r != null) {
-                byte[] ret = r.toByteArray();
-                java.nio.ByteBuffer bb = java.nio.ByteBuffer.allocate(ret.length + 4);
-                bb.putInt(ret.length & 0x7fffff);
-                bb.put(ret);
-                os.write(bb.array());
-            }
-    }
+				}
 
-    public JInPiqi.request read_message(){
-        System.out.println ("Waiting for connections on port " + PORT);
+			}else{
+				//for debugging
+				System.out.println("Unexpected response received from system");
+			}
+		}
+		return response;
+	}
 
-        //This waits for an incomming message
-        sock = ss.accept();
-        InputStream is = sock.getInputStream();
+	public void write_message(JOutPiqi.response r) throws IOException {
+		OutputStream os = sock.getOutputStream();
 
-        byte[] lb = new byte[4];
-        int length = 0;
-        //Gets the incoming data and recreates the proto object
+		if (r != null) {
+			byte[] ret = r.toByteArray();
+			java.nio.ByteBuffer bb = java.nio.ByteBuffer.allocate(ret.length + 4);
+			bb.putInt(ret.length & 0x7fffff);
+			bb.put(ret);
+			os.write(bb.array());
+		}
 
-        is.read(lb, 0, 4);
-        length = lb[0] << 24 | lb[1] << 16 | lb[2] << 8 | lb[3] << 0;
+		os.flush();
+	}
 
-        byte[] in = new byte[length];
-        is.read(in, 0, length);
-        return JInPiqi.request.parseFrom(in);
-    }
+	public JInPiqi.request read_message() throws IOException {
+		System.out.println ("Waiting for connections on port " + PORT);
+
+		//This waits for an incomming message
+		sock = socket.accept();
+		InputStream is = sock.getInputStream();
+
+		byte[] lb = new byte[4];
+		int length = 0;
+		//Gets the incoming data and recreates the proto object
+
+		is.read(lb, 0, 4);
+		length = lb[0] << 24 | lb[1] << 16 | lb[2] << 8 | lb[3] << 0;
+
+		byte[] in = new byte[length];
+		is.read(in, 0, length);
+		return JInPiqi.request.parseFrom(in);
+	}
 }

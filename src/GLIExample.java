@@ -5,9 +5,9 @@ import com.google.protobuf.ByteString;
 
 public class GLIExample implements GLI {
 
-    private GLIService service;
+    private GLSRequestHandler service;
 
-    public GLIExample(GLIService service){
+    public GLIExample(GLSRequestHandler service){
         this.service = service;
     }
 
