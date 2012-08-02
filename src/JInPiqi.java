@@ -3189,12 +3189,6 @@ public final class JInPiqi {
           return false;
         }
       }
-      if (hasSystem()) {
-        if (!getSystem().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -3595,12 +3589,6 @@ public final class JInPiqi {
         }
         if (hasHandleTimerComplete()) {
           if (!getHandleTimerComplete().isInitialized()) {
-            
-            return false;
-          }
-        }
-        if (hasSystem()) {
-          if (!getSystem().isInitialized()) {
             
             return false;
           }

@@ -16,8 +16,8 @@ message system_request {
 }
 
 message system_error {
-    required uint32 code = 1;
-    required string description = 2;
+    optional uint32 code = 1;
+    optional string description = 2;
 }
 
 message system_response {

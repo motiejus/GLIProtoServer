@@ -1561,11 +1561,11 @@ public final class JSystemPiqi {
   public interface system_errorOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required uint32 code = 1;
+    // optional uint32 code = 1;
     boolean hasCode();
     int getCode();
     
-    // required string description = 2;
+    // optional string description = 2;
     boolean hasDescription();
     String getDescription();
   }
@@ -1598,7 +1598,7 @@ public final class JSystemPiqi {
     }
     
     private int bitField0_;
-    // required uint32 code = 1;
+    // optional uint32 code = 1;
     public static final int CODE_FIELD_NUMBER = 1;
     private int code_;
     public boolean hasCode() {
@@ -1608,7 +1608,7 @@ public final class JSystemPiqi {
       return code_;
     }
     
-    // required string description = 2;
+    // optional string description = 2;
     public static final int DESCRIPTION_FIELD_NUMBER = 2;
     private java.lang.Object description_;
     public boolean hasDescription() {
@@ -1649,14 +1649,6 @@ public final class JSystemPiqi {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasCode()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
-      if (!hasDescription()) {
-        memoizedIsInitialized = 0;
-        return false;
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -1888,14 +1880,6 @@ public final class JSystemPiqi {
       }
       
       public final boolean isInitialized() {
-        if (!hasCode()) {
-          
-          return false;
-        }
-        if (!hasDescription()) {
-          
-          return false;
-        }
         return true;
       }
       
@@ -1938,7 +1922,7 @@ public final class JSystemPiqi {
       
       private int bitField0_;
       
-      // required uint32 code = 1;
+      // optional uint32 code = 1;
       private int code_ ;
       public boolean hasCode() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
@@ -1959,7 +1943,7 @@ public final class JSystemPiqi {
         return this;
       }
       
-      // required string description = 2;
+      // optional string description = 2;
       private java.lang.Object description_ = "";
       public boolean hasDescription() {
         return ((bitField0_ & 0x00000002) == 0x00000002);
@@ -2079,12 +2063,6 @@ public final class JSystemPiqi {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (hasError()) {
-        if (!getError().isInitialized()) {
-          memoizedIsInitialized = 0;
-          return false;
-        }
-      }
       memoizedIsInitialized = 1;
       return true;
     }
@@ -2325,12 +2303,6 @@ public final class JSystemPiqi {
       }
       
       public final boolean isInitialized() {
-        if (hasError()) {
-          if (!getError().isInitialized()) {
-            
-            return false;
-          }
-        }
         return true;
       }
       
@@ -2539,8 +2511,8 @@ public final class JSystemPiqi {
       "item_id\030\002 \002(\r\022\016\n\006amount\030\003 \002(\r\"`\n\016system_" +
       "request\022#\n\010buy_item\030\001 \001(\0132\021.buy_item_req" +
       "uest\022)\n\013grant_coins\030\002 \001(\0132\024.grant_coins_" +
-      "request\"1\n\014system_error\022\014\n\004code\030\001 \002(\r\022\023\n" +
-      "\013description\030\002 \002(\t\";\n\017system_response\022\n\n" +
+      "request\"1\n\014system_error\022\014\n\004code\030\001 \001(\r\022\023\n" +
+      "\013description\030\002 \001(\t\";\n\017system_response\022\n\n" +
       "\002ok\030\001 \001(\010\022\034\n\005error\030\002 \001(\0132\r.system_error"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
