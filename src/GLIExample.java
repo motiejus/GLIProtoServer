@@ -47,6 +47,22 @@ public class GLIExample implements GLI {
     public JOutPiqi.response handle_timer_complete(String id, int delta,
             ByteString state) {
         System.out.println("handle_timer_complete [" + id + "], delta [" + delta + "], state: [" + state.toStringUtf8() + "]");
+
+        System.out.println("Buying item...");
+        try 
+        { 
+        	service.buy_item_request("Richy", 355, 1);
+        	System.out.println("Item bought successfully");
+        }
+        catch ( SystemException e )
+        {
+        	System.out.println("Buying item failed with error: " + e.getCode() + " (" + e.getMessage() + ")");
+        }
+        catch ( Exception e )
+        {
+        	System.out.println("Internal error");
+        }
+
         return demo().build();
     }
 

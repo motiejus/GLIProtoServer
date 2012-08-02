@@ -12,11 +12,11 @@ import java.net.Socket;
  *
  */
 public class GLSProtoServer {
-
+	
 	private static final int PORT = 1234;
 
-	private ServerSocket socket;
-	private Socket sock;
+	private ServerSocket acceptor;
+	private Socket socket;
 	private GLSRequestHandler service;
 
 	/**
@@ -27,10 +27,14 @@ public class GLSProtoServer {
 	}
 
 	public void loop() throws IOException {
-		socket = new ServerSocket(PORT);
-		service = new GLSRequestHandler(this);
+		acceptor = new ServerSocket(PORT);
+		service  = new GLSRequestHandler(this);
 
 		while (true) {
+
+			System.out.println ("Waiting for connections on port " + PORT);
+			//This waits for an incomming message
+			socket = acceptor.accept();
 
 			JInPiqi.request req = read_message();
 
@@ -60,39 +64,32 @@ public class GLSProtoServer {
 
 			write_message(response);
 
-			sock.getOutputStream().close();
-
-			sock.close();
+			socket.getOutputStream().close();
+			socket.close();
 		}
 	}
 
-	public JSystemPiqi.system_response send_system_request(JSystemPiqi.system_request request) throws Exception {
-		JSystemPiqi.system_response response = null;
-
+	public void send_system_request(JSystemPiqi.system_request request) throws Exception {
 		if (request != null) {
 			write_message(JOutPiqi.response.newBuilder().setSystem(request).build());
 			JInPiqi.request packet = read_message();
 
 			if(packet.hasSystem()){
-				response = packet.getSystem();
+				JSystemPiqi.system_response response = packet.getSystem();
 				if (!response.hasOk()) {
-					System.out.println("Received error response: message: "
-							+ response.getError().getDescription() + ", code: "
-							+ response.getError().getCode()
-							);
-
+					throw new SystemException(
+							response.getError().getCode(),
+							response.getError().getDescription()
+					);
 				}
-
-			}else{
-				//for debugging
-				System.out.println("Unexpected response received from system");
+			} else {
+				throw new Exception("Unexpected response received");
 			}
 		}
-		return response;
 	}
 
 	public void write_message(JOutPiqi.response r) throws IOException {
-		OutputStream os = sock.getOutputStream();
+		OutputStream os = socket.getOutputStream();
 
 		if (r != null) {
 			byte[] ret = r.toByteArray();
@@ -106,11 +103,7 @@ public class GLSProtoServer {
 	}
 
 	public JInPiqi.request read_message() throws IOException {
-		System.out.println ("Waiting for connections on port " + PORT);
-
-		//This waits for an incomming message
-		sock = socket.accept();
-		InputStream is = sock.getInputStream();
+		InputStream is = socket.getInputStream();
 
 		byte[] lb = new byte[4];
 		int length = 0;
