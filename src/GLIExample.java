@@ -5,49 +5,84 @@ import com.google.protobuf.ByteString;
 
 public class GLIExample implements GLI {
 
-	@Override
-	public JOutPiqi.callback_return handle_action(String CommandName,
-			List<ByteString> Args, ByteString State) {
-		System.out.println("handle_action [" + CommandName + "] with [" + Args + "], state: ["+State.toStringUtf8() + "]");
-		return demo().build();
-	}
+    private GLSRequestHandler service;
 
-	@Override
-	public JOutPiqi.callback_return handle_timer(ByteString identifier, int delta,
-			ByteString State) {
-		System.out.println("handle_timer [" + identifier.toStringUtf8() + "], delta [" + delta + "], State: [" + State.toStringUtf8() + "]");
-		return demo().build();
-	}
+    public GLIExample(GLSRequestHandler service){
+        this.service = service;
+    }
 
-	@Override
-	public JOutPiqi.callback_return handle_user_join(String UserId, ByteString State) {
-		System.out.println("user_join [" + UserId + "]. State: [" + State.toStringUtf8() + "]");
-		return demo().build();
-	}
+    @Override
+    public JOutPiqi.response init(List<String> players) {
+        System.out.println("init, players: [" + players + "]");
+        return JOutPiqi.response.newBuilder().setResponse(
+            JOutPiqi.callback_response.newBuilder()
+                .setResult(JOutPiqi.result.newBuilder().setOk(true))
+                .setState(ByteString.copyFromUtf8("newstate"))
+                .addActions(
+                    JOutPiqi.action.newBuilder().setStartTimer(
+                        JOutPiqi.timer.newBuilder().setId("timer")
+                            .setDuration(1000)
+                            .setRepeats(5)
+                        )
+                    )
+        ).build();
+    }
 
-	@Override
-	public JOutPiqi.callback_return handle_user_leave(String UserId, ByteString State) {
-		System.out.println("user_leave [" + UserId + "]. State: [" + State.toStringUtf8() + "]");
-		return demo().build();
-	}
+    @Override
+    public JOutPiqi.response handle_action(String userId, String commandName,
+            List<ByteString> args, ByteString state) {
+        System.out.println("handle_action [" + commandName + "] with [" + args + "], state: ["+state.toStringUtf8() + "]");
+        // service.buy_item_request(userId, 1, 1);
+        return demo().build();
+    }
 
-	@Override
-	public JOutPiqi.callback_return init(List<String> Players) {
-		System.out.println("init, players: [" + Players + "]");
-		return demo().addTimers(JOutPiqi.gl_timer.newBuilder()
-				.setDurationInMs(60*1000)
-				.setTickDurationInMs(5*1000)
-				.setTimerIdentifier(ByteString.copyFromUtf8("ticker"))).build();
-	}
+    @Override
+    public JOutPiqi.response handle_timer(String id, int delta,
+            ByteString state) {
+        System.out.println("handle_timer [" + id + "], delta [" + delta + "], state: [" + state.toStringUtf8() + "]");
+        return demo().build();
+    }
 
-	private JOutPiqi.callback_return.Builder demo() {
-		return JOutPiqi.callback_return.newBuilder()
-		.addCommands(JOutPiqi.gl_command.newBuilder().setCont(true))
-		.addMessages(JOutPiqi.gl_message.newBuilder()
-				.setRecipient(
-						JOutPiqi.gl_recipient.newBuilder().setAll(true))
-						.setCommandName("hi"))
-				.setNewState(ByteString.copyFromUtf8("newState"));
+    @Override
+    public JOutPiqi.response handle_timer_complete(String id, int delta,
+            ByteString state) {
+        System.out.println("handle_timer_complete [" + id + "], delta [" + delta + "], state: [" + state.toStringUtf8() + "]");
 
-	}
+        System.out.println("Buying item...");
+        try 
+        { 
+        	service.buy_item_request("Richy", 355, 1);
+        	System.out.println("Item bought successfully");
+        }
+        catch ( SystemException e )
+        {
+        	System.out.println("Buying item failed with error: " + e.getCode() + " (" + e.getMessage() + ")");
+        }
+        catch ( Exception e )
+        {
+        	System.out.println("Internal error");
+        }
+
+        return demo().build();
+    }
+
+    @Override
+    public JOutPiqi.response handle_user_join(String userId, ByteString state) {
+        System.out.println("user_join [" + userId + "]. state: [" + state.toStringUtf8() + "]");
+        return demo().build();
+    }
+
+    @Override
+    public JOutPiqi.response handle_user_leave(String userId, ByteString state) {
+        System.out.println("user_leave [" + userId + "]. state: [" + state.toStringUtf8() + "]");
+        return demo().build();
+    }
+
+    private JOutPiqi.response.Builder demo() {
+        return JOutPiqi.response.newBuilder().setResponse(
+            JOutPiqi.callback_response.newBuilder()
+                .setResult(JOutPiqi.result.newBuilder().setOk(true))
+                .setState(ByteString.copyFromUtf8("newstate"))
+        );
+    }
 }
